@@ -1,0 +1,1 @@
+Download yolov3.weights, yolov3.cfg and coco.names , put them in this folder

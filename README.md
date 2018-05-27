@@ -17,7 +17,7 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 ## 0. Related Publications
 
-coming soon
+* coming soon...
 
 ## 1. Prerequisites
 
@@ -43,7 +43,7 @@ You also need to install NVIDIA and cuda to accelerate it.
 
 
 ### 2.2 run 
-1. Download  yolov3.weights, yolov3.cfg and coco.names ans put them to bin folder,they can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
+1. Download  yolov3.weights, yolov3.cfg and coco.names and put them to bin folder,they can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
 
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to data folder.
 3. Associate RGB images and depth images using the python script [associate.py](http://vision.in.tum.de/data/datasets/rgbd-dataset/tools). We already provide associations for some of the sequences in *Examples/RGB-D/associations/*. You can generate your own associations file executing:
