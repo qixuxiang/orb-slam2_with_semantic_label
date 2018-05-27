@@ -1,0 +1,10 @@
+*.dll filter=lfs diff=lfs merge=lfs -text
+
+# Windows Batch File
+*.c   eol=lf
+*.h   eol=lf
+*.cpp   eol=lf
+*.hpp   eol=lf
+*.txt   eol=lf
+*.cfg   eol=lf
+*.bat   eol=crlf

@@ -1,0 +1,2 @@
+export OPENNI2_INCLUDE=/home/zhibo/my_git_code/astra_viewer/OpenNI-Linux-x64-2.3/Include
+export OPENNI2_REDIST=/home/zhibo/my_git_code/astra_viewer/OpenNI-Linux-x64-2.3/Redist

@@ -1,0 +1,703 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI Overview"><param name="Local" value="index.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Getting Started"><param name="Local" value="getting_started.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Installing OpenNI SDK"><param name="Local" value="getting_started.html#installing"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Installing OpenNI SDK on Windows"><param name="Local" value="getting_started.html#installing_windows"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Installing OpenNI SDK on Linux"><param name="Local" value="getting_started.html#installing_linux"><param name="ImageNumber" value="1"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Samples"><param name="Local" value="getting_started.html#Running"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Creating new project that uses OpenNI"><param name="Local" value="getting_started.html#creating_proj"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Visual Studio"><param name="Local" value="getting_started.html#creating_proj_vs"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GCC / GNU Make"><param name="Local" value="getting_started.html#creating_proj_linux"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing an Application"><param name="Local" value="getting_started.html#creating_proj_code"><param name="ImageNumber" value="1"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C++ API Conventions"><param name="Local" value="conventions_cpp.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Classes vs. Structs"><param name="Local" value="conventions_cpp.html#classes_vs_structs"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Return Values from Methods"><param name="Local" value="conventions_cpp.html#return_values"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Arguments to Methods"><param name="Local" value="conventions_cpp.html#pointers_and_refs"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Object Lifetime"><param name="Local" value="conventions_cpp.html#object_lifetime"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Arrays"><param name="Local" value="conventions_cpp.html#arrays"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties and Commands"><param name="Local" value="conventions_cpp.html#properties_and_commands"><param name="ImageNumber" value="1"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Legal Stuff & Acknowledgments"><param name="Local" value="legal.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Release Notes"><param name="Local" value="release_notes.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni"><param name="Local" value="namespaceopenni.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace Members"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="namespacemembers_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Typedefs"><param name="Local" value="namespacemembers_type.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Enumerations"><param name="Local" value="namespacemembers_enum.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Enumerator"><param name="Local" value="namespacemembers_eval.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni"><param name="Local" value="namespaceopenni.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html#a19215ebd71c8da5c64bf9114eb1c9c46"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html#a4db39602aa6df3e6fa41d8d364a28f65"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Array"><param name="Local" value="classopenni_1_1_array.html#ac318cd0a03d863ea861791bb3f647253"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSize"><param name="Local" value="classopenni_1_1_array.html#a92cfa92a6569dbc4f9421f3aa13abe25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator[]"><param name="Local" value="classopenni_1_1_array.html#ad99996179b72b67eab31628dd21592e1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CameraSettings"><param name="Local" value="classopenni_1_1_camera_settings.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getAutoExposureEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#aa0d08435915fcb1f4e61c0eec9ba74f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getAutoWhiteBalanceEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a3672348680d77471408fcb3b733f1d5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getExposure"><param name="Local" value="classopenni_1_1_camera_settings.html#a754f04c54eefa97b9c9384dab0040236"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getGain"><param name="Local" value="classopenni_1_1_camera_settings.html#a6180ac6156cfdc81788f2805e207ee05"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_camera_settings.html#afa314aa55a6554a51d3d9a8ef3defff7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setAutoExposureEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a0d5aba4f0ff486640504f789cfd48266"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setAutoWhiteBalanceEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a93e2a514c334edbaa07efa680dc8b93a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setExposure"><param name="Local" value="classopenni_1_1_camera_settings.html#a1de2542079bb08af57439ab1ded165b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setGain"><param name="Local" value="classopenni_1_1_camera_settings.html#a28a8ecfbb8a198ebb4ad51b60e4794f4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_camera_settings.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CoordinateConverter"><param name="Local" value="classopenni_1_1_coordinate_converter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToColor"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a4faabf558f2eb6e27948e50bffa8f581"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToWorld"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a3129cdc99f37c8084ddb27849702b1dc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToWorld"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a5d934a92602a069c703c0640cd776aeb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertWorldToDepth"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a38b9a3f31f62ebd8664f4f8a1fd26704"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertWorldToDepth"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a8a68229388b168a836c3fe709f2ef953"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html#a1216228442de43e088a66ddf3f21c846"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html#a59056d375ecb412a1b26da76c500a74e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Device"><param name="Local" value="classopenni_1_1_device.html#a5faa442b23dfef84aa77d9117980a3ab"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="classopenni_1_1_device.html#a1804e9fe6cd46185f762d01e8d949518"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDepthColorSyncEnabled"><param name="Local" value="classopenni_1_1_device.html#af01251ba63a30cac547511e7af71c920"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDeviceInfo"><param name="Local" value="classopenni_1_1_device.html#a3e69ec283c5f886018d9bbbc09f29122"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getImageRegistrationMode"><param name="Local" value="classopenni_1_1_device.html#a27b6ec5ffc1a851ee334d64eb94ca1a3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getPlaybackControl"><param name="Local" value="classopenni_1_1_device.html#ab1b0ec1efd1dc208d1f11a91257d3f91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_device.html#a6d6e17eb936779cc22e7e1f68a240d88"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_device.html#ab3a1a6566e8c95eaf759114a946806f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorInfo"><param name="Local" value="classopenni_1_1_device.html#ae2f512f237ee1d3d464250a8bdb81925"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="hasSensor"><param name="Local" value="classopenni_1_1_device.html#aff0664ccc8e969e4778fec07b6adf81f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_device.html#a67d755db987d9d608001b13558c97de9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_device.html#ab2d93274884a29de212e5346c2f221b2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCommandSupported"><param name="Local" value="classopenni_1_1_device.html#a65af6533d3c51656cccaedd4773a47a0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isFile"><param name="Local" value="classopenni_1_1_device.html#aa79925de3c47e902b28123b846027ecc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isImageRegistrationModeSupported"><param name="Local" value="classopenni_1_1_device.html#aaadcb55afcced08fcec9b3c88d98e39a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isPropertySupported"><param name="Local" value="classopenni_1_1_device.html#af39a1ebd7f9f2e4a39566e86fa881d43"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_device.html#a17435124df6c3c795fe9ff160fbeff74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="open"><param name="Local" value="classopenni_1_1_device.html#a2240eaf483ea04506f320f3cd963ca62"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setDepthColorSyncEnabled"><param name="Local" value="classopenni_1_1_device.html#a94dfc240ffd2f8e777494d10814d5d07"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setImageRegistrationMode"><param name="Local" value="classopenni_1_1_device.html#a28161dabfe92ce624d7a805ff8f4ec6e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_device.html#aef50fe8316bd537275e84cced6dd7890"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_device.html#a0879db9460aa56f1b85b4dcd569f797c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInfo"><param name="Local" value="classopenni_1_1_device_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getName"><param name="Local" value="classopenni_1_1_device_info.html#a9e6778ffdd87c71cd87fc0c811c305bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUri"><param name="Local" value="classopenni_1_1_device_info.html#af4f01d41cff1abc9c8ac0b32425fee25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUsbProductId"><param name="Local" value="classopenni_1_1_device_info.html#a79580fdda1ed6e0592de2a8a49a7d947"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUsbVendorId"><param name="Local" value="classopenni_1_1_device_info.html#aab7d4575adff3fd5e835446a78c76e37"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVendor"><param name="Local" value="classopenni_1_1_device_info.html#ac0299511484c97c396e29da8e807b139"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device_info.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_device_info.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a71eda2ded9fd9334bf4ed424b1b27abc"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a3abd73e0ab82e20356cfe18cf751ad93"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceConnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#aba6dd6e8cad373476c7715453a7155fd"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#aad1e5260e540209672440d621c9cd6ed"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#abc423dee371c912301f0c71c7320bb8f"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceDisconnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a93cce4849be363185d58867b63400057"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a66553a13dce2ffb59dc85d71f5104020"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#ad388c57133ddb02c34e77af9266e0e13"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceStateChanged"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a311b3d677811a45e247553ac02d932b7"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a134e63dd470532118c4d9d06496fa910"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a92e84cbd6623beb7bc7438ab3e499a15"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#aa810e1ed0639e76d90d6b110283518d3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="enumerateDevices"><param name="Local" value="classopenni_1_1_open_n_i.html#aef1804963ffbe476be41f9c2c09ee99e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getExtendedError"><param name="Local" value="classopenni_1_1_open_n_i.html#a01fd4df5c93eaf9a9437bbc4c942130a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getLogFileName"><param name="Local" value="classopenni_1_1_open_n_i.html#ae543a75628401c022d8fc27793d99833"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVersion"><param name="Local" value="classopenni_1_1_open_n_i.html#aab96e01582123921bdb223d936393d07"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="initialize"><param name="Local" value="classopenni_1_1_open_n_i.html#a0f374c05978a3373f1060c288997d8ca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a350f5989882cbf4b29dbbcae42003f54"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#af68edcf05f1e50f620c13d5fb393f105"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#acab32726b8f7b9a2d7619ce9be3b7da2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogConsoleOutput"><param name="Local" value="classopenni_1_1_open_n_i.html#a14a299005452e957ccf3703d15b0a96a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogFileOutput"><param name="Local" value="classopenni_1_1_open_n_i.html#a5fe6e70302953a684f6198dbfa8f24e3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogMinSeverity"><param name="Local" value="classopenni_1_1_open_n_i.html#a4f27c310b99a9b0c28793d460bf44133"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogOutputFolder"><param name="Local" value="classopenni_1_1_open_n_i.html#a5082d1b0c3d62c6ed41925cc569acb01"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="shutdown"><param name="Local" value="classopenni_1_1_open_n_i.html#a1a3fb2a487849cc591373aa3f88a7edc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="waitForAnyStream"><param name="Local" value="classopenni_1_1_open_n_i.html#ad0e287ef86221db74055c3e928c9adf2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PlaybackControl"><param name="Local" value="classopenni_1_1_playback_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~PlaybackControl"><param name="Local" value="classopenni_1_1_playback_control.html#a1ff78b61cdde4b4777b30325d0cda0d9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getNumberOfFrames"><param name="Local" value="classopenni_1_1_playback_control.html#a16916573c6a11d1112444222c5f31158"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getRepeatEnabled"><param name="Local" value="classopenni_1_1_playback_control.html#a81ea2303199474834e12407b4752fb3a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSpeed"><param name="Local" value="classopenni_1_1_playback_control.html#a5dfee4f2341dc847b6a9d9e0b5319a1f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_playback_control.html#a3d96a42d8fe9880326a18fb10e4cd618"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="seek"><param name="Local" value="classopenni_1_1_playback_control.html#a99d10ea20ad021cfe056ff225d31d840"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setRepeatEnabled"><param name="Local" value="classopenni_1_1_playback_control.html#ab0c377c5276294889e2562acb8163d30"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setSpeed"><param name="Local" value="classopenni_1_1_playback_control.html#a3ba6436562df82179e118296f3c897ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_playback_control.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Recorder"><param name="Local" value="classopenni_1_1_recorder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Recorder"><param name="Local" value="classopenni_1_1_recorder.html#a868e9145d222d3c17c5e0a684f6b247c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Recorder"><param name="Local" value="classopenni_1_1_recorder.html#a4452268d371108c3b670d7527efae3d0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="attach"><param name="Local" value="classopenni_1_1_recorder.html#ab5351b4642fd738147feca2d7e5e2565"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="create"><param name="Local" value="classopenni_1_1_recorder.html#a7e0865a077fcc968427977d2063884ec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="destroy"><param name="Local" value="classopenni_1_1_recorder.html#a66e242dbe35907e9ecdbb516532ed347"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_recorder.html#a20d2a025db00aa3f27c4d864c2587d91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="start"><param name="Local" value="classopenni_1_1_recorder.html#af9e22ae7bb59250cf97db34cf067da5a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stop"><param name="Local" value="classopenni_1_1_recorder.html#a5912dcb5b76623a1bfdc53e97fe9dc03"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RGB888Pixel"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="b"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a2c77b285c8caf7bd8f7b34a847f53f74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="g"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a7f41e1b7c3e0d376928a966d41068c2a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="r"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a386473055de76efb74b8fb820d39e9a1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SensorInfo"><param name="Local" value="classopenni_1_1_sensor_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorType"><param name="Local" value="classopenni_1_1_sensor_info.html#a13ba6152bbfbadf9c39eacdbab9ce82c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSupportedVideoModes"><param name="Local" value="classopenni_1_1_sensor_info.html#a4dd9f8796091f2ad3853efe13929f719"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_sensor_info.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_sensor_info.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Version"><param name="Local" value="structopenni_1_1_version.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="build"><param name="Local" value="structopenni_1_1_version.html#a79f9cb7e9a828a3303c55498767f332e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="maintenance"><param name="Local" value="structopenni_1_1_version.html#a975d3371cc404eb34bf17c97c09bd0b3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="major"><param name="Local" value="structopenni_1_1_version.html#a5ae4a632961fa57459d2ba5e461dea5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="minor"><param name="Local" value="structopenni_1_1_version.html#aecc77ce1b6aa5866c7d5013d37fb1a5a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#af67a596c25b7bbde80f5ecc42644269d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1003fbe08a41586b8bf98c8e3f76fd0d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ae7f1a028c98bf9969a5e5b504e37c378"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropOriginX"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad7e1230755e708988280d5920f92cd6b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropOriginY"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a137500fe04989b64522d81aac9f95217"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCroppingEnabled"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad1f58ce43de4ce5d107aa013006d9666"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getData"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad9301e9b6d52ffa9424cfeb881a36115"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDataSize"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1414fae176ed7bb88f3b02865014ee09"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getFrameIndex"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ac5ae171717c0f0bb6850c4c2e745045c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getHeight"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a683e3f4b8e327021661ad4e2715de2bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorType"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a25492deb69c269488b3ec56ac50b46af"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getStrideInBytes"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a73df1d5be3af74f80297aeef5c6b1655"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getTimestamp"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ab35db18e8668a71ac1105044d8881c8f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVideoMode"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1dc7e93d0ae87f0eed6b7425b7d5e226"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getWidth"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a6cfc6f11fe07f3d1a5d283b361f592da"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a6b426ef8a97df059c1a35906c7f154d5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="classopenni_1_1_video_frame_ref.html#aa60bde0bb1fa8db6992585ca80f57932"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="release"><param name="Local" value="classopenni_1_1_video_frame_ref.html#aab68b2fe1564d62d739f09edca037ae3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html#a6e7db60c5d475fcd039a6619816ae8d6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html#a6af750616c636565dcdf93fd137044e7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getFps"><param name="Local" value="classopenni_1_1_video_mode.html#a5d91e052575cadda03479815982e92e0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getPixelFormat"><param name="Local" value="classopenni_1_1_video_mode.html#a40aa927adf7917389f48d9f5d8a09ab9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getResolutionX"><param name="Local" value="classopenni_1_1_video_mode.html#aa63e6c57d49bca4694e6c35404bbaf6c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getResolutionY"><param name="Local" value="classopenni_1_1_video_mode.html#af7eb3ed0e7e5e11c44c97abad705244d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="classopenni_1_1_video_mode.html#a7dc4cd97e74a1c99408bc2a39964c16d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setFps"><param name="Local" value="classopenni_1_1_video_mode.html#ad77d3ea95c7df97759f7d232d738b30e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setPixelFormat"><param name="Local" value="classopenni_1_1_video_mode.html#af7fd37bba526fced9c7dbbbf1ab419ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setResolution"><param name="Local" value="classopenni_1_1_video_mode.html#a01c52061617acb5f62a9eabf8b2acdbe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SensorInfo"><param name="Local" value="classopenni_1_1_video_mode.html#a08ab6b96be9413b35b5898694db91bfb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_mode.html#a19caa736db2e87abcc9d7c66bccaefb6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_mode.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a39da40d628ef970086d45c7886793c7f"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="allocateFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a87d1de1d474d7ebf0c17830e26b685ce"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="freeFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#aaa309f4045027b32efe305f67403dc9b"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a73fb0101631bc1da7eeae056d73d78fc"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#ab9edd2ad37826a0c45a2379bfbec8456"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onNewFrame"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a5f6a771b3f48e2217d036bd1c6b520a4"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#ad9e23fcc619535149c8833eea9fc2918"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#acf94ebb74dc4171be8e52d891ea60823"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#a063149ee3a46d499af3819565156c818"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addNewFrameListener"><param name="Local" value="classopenni_1_1_video_stream.html#a72da62972b0f042d2e4d6b4e1bf3605a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="create"><param name="Local" value="classopenni_1_1_video_stream.html#a171b2f72e383903ee7787697b26017ae"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="destroy"><param name="Local" value="classopenni_1_1_video_stream.html#ae10d69b147fe098c3dc9cb0bfde415ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCameraSettings"><param name="Local" value="classopenni_1_1_video_stream.html#a029f6df9d50d1f125c0ec2c7f2b6574f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropping"><param name="Local" value="classopenni_1_1_video_stream.html#aa3f5d33e2d3bdf0416a427617b8cb180"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getHorizontalFieldOfView"><param name="Local" value="classopenni_1_1_video_stream.html#a9f8887507198057129befc8f448c7cb0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMaxPixelValue"><param name="Local" value="classopenni_1_1_video_stream.html#a28120b50c843e3062a756c92ed485281"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMinPixelValue"><param name="Local" value="classopenni_1_1_video_stream.html#a00fb26ce13b2509eb8f9a6d0290697b9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMirroringEnabled"><param name="Local" value="classopenni_1_1_video_stream.html#aad5a1e2f4eeba20896d2b9ef04a52e7a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_video_stream.html#adc8197276c332ce2afcf322de68e0e04"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_video_stream.html#aa0916a3aa5ae7afa1a360c2ce4d642e8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorInfo"><param name="Local" value="classopenni_1_1_video_stream.html#aede2670a0035d933929d7c7a9356edc5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVerticalFieldOfView"><param name="Local" value="classopenni_1_1_video_stream.html#a804549dfa750664943368ee6b304da31"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVideoMode"><param name="Local" value="classopenni_1_1_video_stream.html#a8fb28ca1b61d1ecabd28d08633e927ab"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_video_stream.html#aaa6363371fa11f76e431462e913cffe2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_video_stream.html#a766858a79175545e8f509c652f6390c7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCommandSupported"><param name="Local" value="classopenni_1_1_video_stream.html#a565db7c7a9d7f13960219c5d491898b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCroppingSupported"><param name="Local" value="classopenni_1_1_video_stream.html#a05345182b0d9d8b967a9575980a5523e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isPropertySupported"><param name="Local" value="classopenni_1_1_video_stream.html#acd1b875ad4fe267deed85f540e33c30d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_video_stream.html#ae187f95f14461215fed421a3d6a66625"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="readFrame"><param name="Local" value="classopenni_1_1_video_stream.html#a1610b8aaa89e0f39a607b9780ba9ab77"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeNewFrameListener"><param name="Local" value="classopenni_1_1_video_stream.html#a4842ff4f5b1be4c668f0c616b98aaa92"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="resetCropping"><param name="Local" value="classopenni_1_1_video_stream.html#ae3f8fc2698c14d85667d35d358d4643c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setCropping"><param name="Local" value="classopenni_1_1_video_stream.html#a5b3bc3ef4e531496f875fdbf6604a157"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setFrameBuffersAllocator"><param name="Local" value="classopenni_1_1_video_stream.html#a627e6d5b3ddf2032693275780913d1ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setMirroringEnabled"><param name="Local" value="classopenni_1_1_video_stream.html#af34b31b62f0ae9d1772b6ff85ef0bae5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_video_stream.html#a72c23221468529cc97c6bde25fccce2c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_video_stream.html#a915f6710f0818b24996daab96c5124ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setVideoMode"><param name="Local" value="classopenni_1_1_video_stream.html#a542e98aecfcdfc5c38079d80960af5d2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="start"><param name="Local" value="classopenni_1_1_video_stream.html#a090d4873ab30dac86d29005831ffbd77"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stop"><param name="Local" value="classopenni_1_1_video_stream.html#a55fc279dd603a694ee5f5ec074592dce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_video_stream.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="YUV422DoublePixel"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="u"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#a01ad06ab1eda8a3af607b4bf53720974"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="v"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#ab1b8f2b619f286d7fc324db9ac30ee57"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y1"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#ad77adbb7bbcd747ceee687cac0c2d479"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y2"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#a877023a8447a329874a75cad01e38aed"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="YUYVDoublePixel"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="u"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#ad021ef324e78398b8c6273e37d04f658"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="v"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a812758444329e769163f40910a3ec1f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y1"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a94db4b198aea90a8ac3161ae8a089fa1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y2"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a2e5dbe140135dfecfe5b6e982d73c58e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::Array< T >"><param name="Local" value="classopenni_1_1_array.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::Array< openni::VideoMode >"><param name="Local" value="classopenni_1_1_array.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::CameraSettings"><param name="Local" value="classopenni_1_1_camera_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::CoordinateConverter"><param name="Local" value="classopenni_1_1_coordinate_converter.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::Device"><param name="Local" value="classopenni_1_1_device.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::OpenNI::DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::OpenNI::DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::OpenNI::DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::VideoStream::FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::VideoStream::NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="OniDeviceInfo"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::DeviceInfo"><param name="Local" value="classopenni_1_1_device_info.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="OniVideoMode"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::OpenNI"><param name="Local" value="classopenni_1_1_open_n_i.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::PlaybackControl"><param name="Local" value="classopenni_1_1_playback_control.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::Recorder"><param name="Local" value="classopenni_1_1_recorder.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::RGB888Pixel"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::SensorInfo"><param name="Local" value="classopenni_1_1_sensor_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::Version"><param name="Local" value="structopenni_1_1_version.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::YUV422DoublePixel"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="openni::YUYVDoublePixel"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Related Functions"><param name="Local" value="functions_rela.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="OniEnums.h"><param name="Local" value="_oni_enums_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceState"><param name="Local" value="_oni_enums_8h.html#aeec58c3f4271cc66959b44fa27b10534"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DEVICE_STATE_OK"><param name="Local" value="_oni_enums_8h.html#aeec58c3f4271cc66959b44fa27b10534a51a97aca351b2f4535fef9574ec79155"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DEVICE_STATE_ERROR"><param name="Local" value="_oni_enums_8h.html#aeec58c3f4271cc66959b44fa27b10534a2348a5df894ccb5515d5f05683cf695c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DEVICE_STATE_NOT_READY"><param name="Local" value="_oni_enums_8h.html#aeec58c3f4271cc66959b44fa27b10534aeeec47798a32e354357c9d9a24aeb1aa"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DEVICE_STATE_EOF"><param name="Local" value="_oni_enums_8h.html#aeec58c3f4271cc66959b44fa27b10534ac93619ad2945b98276df9060e70696c7"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ImageRegistrationMode"><param name="Local" value="_oni_enums_8h.html#a6c671425ce625070b9d913306198eb9c"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IMAGE_REGISTRATION_OFF"><param name="Local" value="_oni_enums_8h.html#a6c671425ce625070b9d913306198eb9ca143ed30372dfe6638316fa04a3f1969d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IMAGE_REGISTRATION_DEPTH_TO_COLOR"><param name="Local" value="_oni_enums_8h.html#a6c671425ce625070b9d913306198eb9ca03f6aba1aaf43abb76ae1679850b9ca4"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PixelFormat"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_DEPTH_1_MM"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a632f55e83f472e7aabe08395e19e541a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_DEPTH_100_UM"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a75926a3ce2b7a2e0ef71beaa3c054db9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_SHIFT_9_2"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a5ce6ed41d9323df3bf72fdb192d3dcec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_SHIFT_9_3"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a3e5d5d7246b34e4f36ff4bff071cabf4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_RGB888"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a321ad355d4bbfd38cce015d8b1355c20"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_YUV422"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5ad96cd310cc11fa1ca79447a0af6d4e33"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_GRAY8"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5ac53590430b6df83e64b92b4186f30316"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_GRAY16"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5acaed98d2ceb70d2204d0b8b5b3c1a6ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_JPEG"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5a0d3016a14f25168bc17cf22ec7720aa0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PIXEL_FORMAT_YUYV"><param name="Local" value="_oni_enums_8h.html#a6d1ecf2502394d600cb8d3709092d5a5ade21dfc171dfa3b55affce24a9c9c5d0"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SensorType"><param name="Local" value="_oni_enums_8h.html#a50658bbbf9f6e9e57aa6ebdb768fd8c2"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SENSOR_IR"><param name="Local" value="_oni_enums_8h.html#a50658bbbf9f6e9e57aa6ebdb768fd8c2ac8259adf148c389fe5c0e61d3f55e8a9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SENSOR_COLOR"><param name="Local" value="_oni_enums_8h.html#a50658bbbf9f6e9e57aa6ebdb768fd8c2a19f32676f8746dc55fbe1b8fcbacc8a1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SENSOR_DEPTH"><param name="Local" value="_oni_enums_8h.html#a50658bbbf9f6e9e57aa6ebdb768fd8c2ac1b3c7280aa23227f121f93df5e35e31"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Status"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_OK"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333ac4a1d7871ca526614cc705cd34b67367"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_ERROR"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333a3b91bb9ad4a7c004eafb21f10de74346"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_NOT_IMPLEMENTED"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333acdf39fc4f2367608a4e72cc5cbf8fd63"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_NOT_SUPPORTED"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333adf334ec01f8b7b2d7a8593c488690475"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_BAD_PARAMETER"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333ac9368d475a09338730d0c93ffb5cdcb4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_OUT_OF_FLOW"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333a0210e71f7ee8690aed5ae1ce961e690b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_NO_DEVICE"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333a9908514b009593d2309afb77e01915c4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_TIME_OUT"><param name="Local" value="_oni_enums_8h.html#abf03edf56fbb987feebce8e98b3e0333aceedf069d1c84942376d82e50eeb4383"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TIMEOUT_FOREVER"><param name="Local" value="_oni_enums_8h.html#a606771f15b60eaf092fa71378787bd66"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TIMEOUT_NONE"><param name="Local" value="_oni_enums_8h.html#ab58604667cbdaeec47c4f1e889bf2fd5"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI.h"><param name="Local" value="_open_n_i_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html#a19215ebd71c8da5c64bf9114eb1c9c46"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Array"><param name="Local" value="classopenni_1_1_array.html#a4db39602aa6df3e6fa41d8d364a28f65"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Array"><param name="Local" value="classopenni_1_1_array.html#ac318cd0a03d863ea861791bb3f647253"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSize"><param name="Local" value="classopenni_1_1_array.html#a92cfa92a6569dbc4f9421f3aa13abe25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator[]"><param name="Local" value="classopenni_1_1_array.html#ad99996179b72b67eab31628dd21592e1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CameraSettings"><param name="Local" value="classopenni_1_1_camera_settings.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getAutoExposureEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#aa0d08435915fcb1f4e61c0eec9ba74f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getAutoWhiteBalanceEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a3672348680d77471408fcb3b733f1d5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getExposure"><param name="Local" value="classopenni_1_1_camera_settings.html#a754f04c54eefa97b9c9384dab0040236"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getGain"><param name="Local" value="classopenni_1_1_camera_settings.html#a6180ac6156cfdc81788f2805e207ee05"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_camera_settings.html#afa314aa55a6554a51d3d9a8ef3defff7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setAutoExposureEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a0d5aba4f0ff486640504f789cfd48266"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setAutoWhiteBalanceEnabled"><param name="Local" value="classopenni_1_1_camera_settings.html#a93e2a514c334edbaa07efa680dc8b93a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setExposure"><param name="Local" value="classopenni_1_1_camera_settings.html#a1de2542079bb08af57439ab1ded165b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setGain"><param name="Local" value="classopenni_1_1_camera_settings.html#a28a8ecfbb8a198ebb4ad51b60e4794f4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_camera_settings.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CoordinateConverter"><param name="Local" value="classopenni_1_1_coordinate_converter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToColor"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a4faabf558f2eb6e27948e50bffa8f581"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToWorld"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a3129cdc99f37c8084ddb27849702b1dc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertDepthToWorld"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a5d934a92602a069c703c0640cd776aeb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertWorldToDepth"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a38b9a3f31f62ebd8664f4f8a1fd26704"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="convertWorldToDepth"><param name="Local" value="classopenni_1_1_coordinate_converter.html#a8a68229388b168a836c3fe709f2ef953"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html#a1216228442de43e088a66ddf3f21c846"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device.html#a59056d375ecb412a1b26da76c500a74e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Device"><param name="Local" value="classopenni_1_1_device.html#a5faa442b23dfef84aa77d9117980a3ab"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="classopenni_1_1_device.html#a1804e9fe6cd46185f762d01e8d949518"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDepthColorSyncEnabled"><param name="Local" value="classopenni_1_1_device.html#af01251ba63a30cac547511e7af71c920"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDeviceInfo"><param name="Local" value="classopenni_1_1_device.html#a3e69ec283c5f886018d9bbbc09f29122"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getImageRegistrationMode"><param name="Local" value="classopenni_1_1_device.html#a27b6ec5ffc1a851ee334d64eb94ca1a3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getPlaybackControl"><param name="Local" value="classopenni_1_1_device.html#ab1b0ec1efd1dc208d1f11a91257d3f91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_device.html#a6d6e17eb936779cc22e7e1f68a240d88"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_device.html#ab3a1a6566e8c95eaf759114a946806f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorInfo"><param name="Local" value="classopenni_1_1_device.html#ae2f512f237ee1d3d464250a8bdb81925"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="hasSensor"><param name="Local" value="classopenni_1_1_device.html#aff0664ccc8e969e4778fec07b6adf81f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_device.html#a67d755db987d9d608001b13558c97de9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_device.html#ab2d93274884a29de212e5346c2f221b2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCommandSupported"><param name="Local" value="classopenni_1_1_device.html#a65af6533d3c51656cccaedd4773a47a0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isFile"><param name="Local" value="classopenni_1_1_device.html#aa79925de3c47e902b28123b846027ecc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isImageRegistrationModeSupported"><param name="Local" value="classopenni_1_1_device.html#aaadcb55afcced08fcec9b3c88d98e39a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isPropertySupported"><param name="Local" value="classopenni_1_1_device.html#af39a1ebd7f9f2e4a39566e86fa881d43"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_device.html#a17435124df6c3c795fe9ff160fbeff74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="open"><param name="Local" value="classopenni_1_1_device.html#a2240eaf483ea04506f320f3cd963ca62"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setDepthColorSyncEnabled"><param name="Local" value="classopenni_1_1_device.html#a94dfc240ffd2f8e777494d10814d5d07"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setImageRegistrationMode"><param name="Local" value="classopenni_1_1_device.html#a28161dabfe92ce624d7a805ff8f4ec6e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_device.html#aef50fe8316bd537275e84cced6dd7890"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_device.html#a0879db9460aa56f1b85b4dcd569f797c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a71eda2ded9fd9334bf4ed424b1b27abc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a3abd73e0ab82e20356cfe18cf751ad93"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceConnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#aba6dd6e8cad373476c7715453a7155fd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#aad1e5260e540209672440d621c9cd6ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#abc423dee371c912301f0c71c7320bb8f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceDisconnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a93cce4849be363185d58867b63400057"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInfo"><param name="Local" value="classopenni_1_1_device_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getName"><param name="Local" value="classopenni_1_1_device_info.html#a9e6778ffdd87c71cd87fc0c811c305bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUri"><param name="Local" value="classopenni_1_1_device_info.html#af4f01d41cff1abc9c8ac0b32425fee25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUsbProductId"><param name="Local" value="classopenni_1_1_device_info.html#a79580fdda1ed6e0592de2a8a49a7d947"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getUsbVendorId"><param name="Local" value="classopenni_1_1_device_info.html#aab7d4575adff3fd5e835446a78c76e37"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVendor"><param name="Local" value="classopenni_1_1_device_info.html#ac0299511484c97c396e29da8e807b139"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_device_info.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_device_info.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a66553a13dce2ffb59dc85d71f5104020"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#ad388c57133ddb02c34e77af9266e0e13"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceStateChanged"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a311b3d677811a45e247553ac02d932b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a39da40d628ef970086d45c7886793c7f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="allocateFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a87d1de1d474d7ebf0c17830e26b685ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="freeFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#aaa309f4045027b32efe305f67403dc9b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a73fb0101631bc1da7eeae056d73d78fc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#ab9edd2ad37826a0c45a2379bfbec8456"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="onNewFrame"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a5f6a771b3f48e2217d036bd1c6b520a4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a71eda2ded9fd9334bf4ed424b1b27abc"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a3abd73e0ab82e20356cfe18cf751ad93"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceConnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#aba6dd6e8cad373476c7715453a7155fd"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_connected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#aad1e5260e540209672440d621c9cd6ed"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#abc423dee371c912301f0c71c7320bb8f"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceDisconnected"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a93cce4849be363185d58867b63400057"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_disconnected_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a66553a13dce2ffb59dc85d71f5104020"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#ad388c57133ddb02c34e77af9266e0e13"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onDeviceStateChanged"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a311b3d677811a45e247553ac02d932b7"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenNI"><param name="Local" value="classopenni_1_1_open_n_i_1_1_device_state_changed_listener.html#a1d661a036b1e7e29b65f2b012bc92d00"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a134e63dd470532118c4d9d06496fa910"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a92e84cbd6623beb7bc7438ab3e499a15"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addDeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#aa810e1ed0639e76d90d6b110283518d3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="enumerateDevices"><param name="Local" value="classopenni_1_1_open_n_i.html#aef1804963ffbe476be41f9c2c09ee99e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getExtendedError"><param name="Local" value="classopenni_1_1_open_n_i.html#a01fd4df5c93eaf9a9437bbc4c942130a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getLogFileName"><param name="Local" value="classopenni_1_1_open_n_i.html#ae543a75628401c022d8fc27793d99833"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVersion"><param name="Local" value="classopenni_1_1_open_n_i.html#aab96e01582123921bdb223d936393d07"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="initialize"><param name="Local" value="classopenni_1_1_open_n_i.html#a0f374c05978a3373f1060c288997d8ca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceConnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#a350f5989882cbf4b29dbbcae42003f54"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceDisconnectedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#af68edcf05f1e50f620c13d5fb393f105"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeDeviceStateChangedListener"><param name="Local" value="classopenni_1_1_open_n_i.html#acab32726b8f7b9a2d7619ce9be3b7da2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogConsoleOutput"><param name="Local" value="classopenni_1_1_open_n_i.html#a14a299005452e957ccf3703d15b0a96a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogFileOutput"><param name="Local" value="classopenni_1_1_open_n_i.html#a5fe6e70302953a684f6198dbfa8f24e3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogMinSeverity"><param name="Local" value="classopenni_1_1_open_n_i.html#a4f27c310b99a9b0c28793d460bf44133"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setLogOutputFolder"><param name="Local" value="classopenni_1_1_open_n_i.html#a5082d1b0c3d62c6ed41925cc569acb01"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="shutdown"><param name="Local" value="classopenni_1_1_open_n_i.html#a1a3fb2a487849cc591373aa3f88a7edc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="waitForAnyStream"><param name="Local" value="classopenni_1_1_open_n_i.html#ad0e287ef86221db74055c3e928c9adf2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PlaybackControl"><param name="Local" value="classopenni_1_1_playback_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~PlaybackControl"><param name="Local" value="classopenni_1_1_playback_control.html#a1ff78b61cdde4b4777b30325d0cda0d9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getNumberOfFrames"><param name="Local" value="classopenni_1_1_playback_control.html#a16916573c6a11d1112444222c5f31158"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getRepeatEnabled"><param name="Local" value="classopenni_1_1_playback_control.html#a81ea2303199474834e12407b4752fb3a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSpeed"><param name="Local" value="classopenni_1_1_playback_control.html#a5dfee4f2341dc847b6a9d9e0b5319a1f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_playback_control.html#a3d96a42d8fe9880326a18fb10e4cd618"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="seek"><param name="Local" value="classopenni_1_1_playback_control.html#a99d10ea20ad021cfe056ff225d31d840"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setRepeatEnabled"><param name="Local" value="classopenni_1_1_playback_control.html#ab0c377c5276294889e2562acb8163d30"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setSpeed"><param name="Local" value="classopenni_1_1_playback_control.html#a3ba6436562df82179e118296f3c897ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_playback_control.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Recorder"><param name="Local" value="classopenni_1_1_recorder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Recorder"><param name="Local" value="classopenni_1_1_recorder.html#a868e9145d222d3c17c5e0a684f6b247c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Recorder"><param name="Local" value="classopenni_1_1_recorder.html#a4452268d371108c3b670d7527efae3d0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="attach"><param name="Local" value="classopenni_1_1_recorder.html#ab5351b4642fd738147feca2d7e5e2565"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="create"><param name="Local" value="classopenni_1_1_recorder.html#a7e0865a077fcc968427977d2063884ec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="destroy"><param name="Local" value="classopenni_1_1_recorder.html#a66e242dbe35907e9ecdbb516532ed347"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_recorder.html#a20d2a025db00aa3f27c4d864c2587d91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="start"><param name="Local" value="classopenni_1_1_recorder.html#af9e22ae7bb59250cf97db34cf067da5a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stop"><param name="Local" value="classopenni_1_1_recorder.html#a5912dcb5b76623a1bfdc53e97fe9dc03"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RGB888Pixel"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="b"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a2c77b285c8caf7bd8f7b34a847f53f74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="g"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a7f41e1b7c3e0d376928a966d41068c2a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="r"><param name="Local" value="structopenni_1_1_r_g_b888_pixel.html#a386473055de76efb74b8fb820d39e9a1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SensorInfo"><param name="Local" value="classopenni_1_1_sensor_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorType"><param name="Local" value="classopenni_1_1_sensor_info.html#a13ba6152bbfbadf9c39eacdbab9ce82c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSupportedVideoModes"><param name="Local" value="classopenni_1_1_sensor_info.html#a4dd9f8796091f2ad3853efe13929f719"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_sensor_info.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_sensor_info.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Version"><param name="Local" value="structopenni_1_1_version.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="build"><param name="Local" value="structopenni_1_1_version.html#a79f9cb7e9a828a3303c55498767f332e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="maintenance"><param name="Local" value="structopenni_1_1_version.html#a975d3371cc404eb34bf17c97c09bd0b3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="major"><param name="Local" value="structopenni_1_1_version.html#a5ae4a632961fa57459d2ba5e461dea5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="minor"><param name="Local" value="structopenni_1_1_version.html#aecc77ce1b6aa5866c7d5013d37fb1a5a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#af67a596c25b7bbde80f5ecc42644269d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1003fbe08a41586b8bf98c8e3f76fd0d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ae7f1a028c98bf9969a5e5b504e37c378"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropOriginX"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad7e1230755e708988280d5920f92cd6b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropOriginY"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a137500fe04989b64522d81aac9f95217"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCroppingEnabled"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad1f58ce43de4ce5d107aa013006d9666"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getData"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ad9301e9b6d52ffa9424cfeb881a36115"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getDataSize"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1414fae176ed7bb88f3b02865014ee09"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getFrameIndex"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ac5ae171717c0f0bb6850c4c2e745045c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getHeight"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a683e3f4b8e327021661ad4e2715de2bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorType"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a25492deb69c269488b3ec56ac50b46af"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getStrideInBytes"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a73df1d5be3af74f80297aeef5c6b1655"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getTimestamp"><param name="Local" value="classopenni_1_1_video_frame_ref.html#ab35db18e8668a71ac1105044d8881c8f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVideoMode"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a1dc7e93d0ae87f0eed6b7425b7d5e226"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getWidth"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a6cfc6f11fe07f3d1a5d283b361f592da"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a6b426ef8a97df059c1a35906c7f154d5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="classopenni_1_1_video_frame_ref.html#aa60bde0bb1fa8db6992585ca80f57932"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="release"><param name="Local" value="classopenni_1_1_video_frame_ref.html#aab68b2fe1564d62d739f09edca037ae3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_frame_ref.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html#a6e7db60c5d475fcd039a6619816ae8d6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoMode"><param name="Local" value="classopenni_1_1_video_mode.html#a6af750616c636565dcdf93fd137044e7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getFps"><param name="Local" value="classopenni_1_1_video_mode.html#a5d91e052575cadda03479815982e92e0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getPixelFormat"><param name="Local" value="classopenni_1_1_video_mode.html#a40aa927adf7917389f48d9f5d8a09ab9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getResolutionX"><param name="Local" value="classopenni_1_1_video_mode.html#aa63e6c57d49bca4694e6c35404bbaf6c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getResolutionY"><param name="Local" value="classopenni_1_1_video_mode.html#af7eb3ed0e7e5e11c44c97abad705244d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="classopenni_1_1_video_mode.html#a7dc4cd97e74a1c99408bc2a39964c16d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setFps"><param name="Local" value="classopenni_1_1_video_mode.html#ad77d3ea95c7df97759f7d232d738b30e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setPixelFormat"><param name="Local" value="classopenni_1_1_video_mode.html#af7fd37bba526fced9c7dbbbf1ab419ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setResolution"><param name="Local" value="classopenni_1_1_video_mode.html#a01c52061617acb5f62a9eabf8b2acdbe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SensorInfo"><param name="Local" value="classopenni_1_1_video_mode.html#a08ab6b96be9413b35b5898694db91bfb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoFrameRef"><param name="Local" value="classopenni_1_1_video_mode.html#a19caa736db2e87abcc9d7c66bccaefb6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_mode.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~FrameAllocator"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a39da40d628ef970086d45c7886793c7f"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="allocateFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a87d1de1d474d7ebf0c17830e26b685ce"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="freeFrameBuffer"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#aaa309f4045027b32efe305f67403dc9b"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_frame_allocator.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a73fb0101631bc1da7eeae056d73d78fc"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~NewFrameListener"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#ab9edd2ad37826a0c45a2379bfbec8456"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="onNewFrame"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a5f6a771b3f48e2217d036bd1c6b520a4"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream_1_1_new_frame_listener.html#a4fd1028f691947151ea08e0db214f01c"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#ad9e23fcc619535149c8833eea9fc2918"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#acf94ebb74dc4171be8e52d891ea60823"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~VideoStream"><param name="Local" value="classopenni_1_1_video_stream.html#a063149ee3a46d499af3819565156c818"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="addNewFrameListener"><param name="Local" value="classopenni_1_1_video_stream.html#a72da62972b0f042d2e4d6b4e1bf3605a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="create"><param name="Local" value="classopenni_1_1_video_stream.html#a171b2f72e383903ee7787697b26017ae"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="destroy"><param name="Local" value="classopenni_1_1_video_stream.html#ae10d69b147fe098c3dc9cb0bfde415ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCameraSettings"><param name="Local" value="classopenni_1_1_video_stream.html#a029f6df9d50d1f125c0ec2c7f2b6574f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getCropping"><param name="Local" value="classopenni_1_1_video_stream.html#aa3f5d33e2d3bdf0416a427617b8cb180"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getHorizontalFieldOfView"><param name="Local" value="classopenni_1_1_video_stream.html#a9f8887507198057129befc8f448c7cb0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMaxPixelValue"><param name="Local" value="classopenni_1_1_video_stream.html#a28120b50c843e3062a756c92ed485281"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMinPixelValue"><param name="Local" value="classopenni_1_1_video_stream.html#a00fb26ce13b2509eb8f9a6d0290697b9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getMirroringEnabled"><param name="Local" value="classopenni_1_1_video_stream.html#aad5a1e2f4eeba20896d2b9ef04a52e7a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_video_stream.html#adc8197276c332ce2afcf322de68e0e04"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getProperty"><param name="Local" value="classopenni_1_1_video_stream.html#aa0916a3aa5ae7afa1a360c2ce4d642e8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getSensorInfo"><param name="Local" value="classopenni_1_1_video_stream.html#aede2670a0035d933929d7c7a9356edc5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVerticalFieldOfView"><param name="Local" value="classopenni_1_1_video_stream.html#a804549dfa750664943368ee6b304da31"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVideoMode"><param name="Local" value="classopenni_1_1_video_stream.html#a8fb28ca1b61d1ecabd28d08633e927ab"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_video_stream.html#aaa6363371fa11f76e431462e913cffe2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="invoke"><param name="Local" value="classopenni_1_1_video_stream.html#a766858a79175545e8f509c652f6390c7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCommandSupported"><param name="Local" value="classopenni_1_1_video_stream.html#a565db7c7a9d7f13960219c5d491898b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isCroppingSupported"><param name="Local" value="classopenni_1_1_video_stream.html#a05345182b0d9d8b967a9575980a5523e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isPropertySupported"><param name="Local" value="classopenni_1_1_video_stream.html#acd1b875ad4fe267deed85f540e33c30d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classopenni_1_1_video_stream.html#ae187f95f14461215fed421a3d6a66625"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="readFrame"><param name="Local" value="classopenni_1_1_video_stream.html#a1610b8aaa89e0f39a607b9780ba9ab77"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="removeNewFrameListener"><param name="Local" value="classopenni_1_1_video_stream.html#a4842ff4f5b1be4c668f0c616b98aaa92"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="resetCropping"><param name="Local" value="classopenni_1_1_video_stream.html#ae3f8fc2698c14d85667d35d358d4643c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setCropping"><param name="Local" value="classopenni_1_1_video_stream.html#a5b3bc3ef4e531496f875fdbf6604a157"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setFrameBuffersAllocator"><param name="Local" value="classopenni_1_1_video_stream.html#a627e6d5b3ddf2032693275780913d1ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setMirroringEnabled"><param name="Local" value="classopenni_1_1_video_stream.html#af34b31b62f0ae9d1772b6ff85ef0bae5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_video_stream.html#a72c23221468529cc97c6bde25fccce2c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setProperty"><param name="Local" value="classopenni_1_1_video_stream.html#a915f6710f0818b24996daab96c5124ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setVideoMode"><param name="Local" value="classopenni_1_1_video_stream.html#a542e98aecfcdfc5c38079d80960af5d2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="start"><param name="Local" value="classopenni_1_1_video_stream.html#a090d4873ab30dac86d29005831ffbd77"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stop"><param name="Local" value="classopenni_1_1_video_stream.html#a55fc279dd603a694ee5f5ec074592dce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Device"><param name="Local" value="classopenni_1_1_video_stream.html#a520fa05e0bf58785da428f7a0241eee2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="YUV422DoublePixel"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="u"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#a01ad06ab1eda8a3af607b4bf53720974"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="v"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#ab1b8f2b619f286d7fc324db9ac30ee57"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y1"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#ad77adbb7bbcd747ceee687cac0c2d479"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y2"><param name="Local" value="structopenni_1_1_y_u_v422_double_pixel.html#a877023a8447a329874a75cad01e38aed"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="YUYVDoublePixel"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="u"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#ad021ef324e78398b8c6273e37d04f658"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="v"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a812758444329e769163f40910a3ec1f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y1"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a94db4b198aea90a8ac3161ae8a089fa1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="y2"><param name="Local" value="structopenni_1_1_y_u_y_v_double_pixel.html#a2e5dbe140135dfecfe5b6e982d73c58e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DepthPixel"><param name="Local" value="_open_n_i_8h.html#ab2403242071ff06fc6fe18c0c6111d0f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Grayscale16Pixel"><param name="Local" value="_open_n_i_8h.html#a15bcac1ff77c313557dd28804c31c4ff"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ANY_DEVICE"><param name="Local" value="_open_n_i_8h.html#a89a8e7d86031e30dca6deb3cab33646d"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

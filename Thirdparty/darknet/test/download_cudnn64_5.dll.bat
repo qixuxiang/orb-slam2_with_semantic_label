@@ -1,0 +1,2 @@
+powershell "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('https://www.dropbox.com/s/4un9y5v2e7zfvwk/cudnn64_5.dll?dl=1','cudnn64_5.dll')"
+pause
