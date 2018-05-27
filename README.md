@@ -17,12 +17,12 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 ## 0. Related Publications
 
-* coming soon...
+**coming soon...**
 
 ## 1. Prerequisites
 
 ### 1.0 requirements
-  * ubuntu 14.04/Ubuntu 16.04
+  * Ubuntu 14.04/Ubuntu 16.04
   * ORBSLAM2 
   * CUDA >=6.5
   * C++11(must)
@@ -73,5 +73,5 @@ Our system is released under a [GPLv3 license](https://github.com/qixuxiang/orb-
 
 If you want to use code for commercial purposes, please contact the authors.
 
-##Other issue
+## Other issue
 we do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
