@@ -75,3 +75,5 @@ If you want to use code for commercial purposes, please contact the authors.
 
 ## Other issue
 we do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
+
+We provide a [video] (https://github.com/qixuxiang/orb-slam2_with_semantic_label/blob/master/License-gpl.txt) here.
