@@ -10,7 +10,7 @@
 ## introduction
 
 **orb-slam2_with_semantic_label** is a  visual SLAM system based on  **[ORB_SLAM2[1-2]](https://github.com/raulmur/ORB_SLAM2)**.
-The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  robot applications. However, this method cannot provide semantic information in environmental mapping.In this work,we present a method to build a 3D dense semantic map,which utilize both 2D image labels from **[YOLOv3[3]](https://github.com/raulmur/ORB_SLAM2)** and 3D geometric information.
+The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  robot applications. However, this method cannot provide semantic information in environmental mapping.In this work,we present a method to build a 3D dense semantic map,which utilize both 2D image labels from **[YOLOv3[3]](https://github.com/qixuxiang/YOLOv3_SpringEdition)** and 3D geometric information.
 
 
 
@@ -26,7 +26,7 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
   * ORBSLAM2 
   * CUDA >=6.5
   * C++11(must)
-  * GCC5(must)
+  * gcc5(must)
   * cmake
 
 
@@ -66,7 +66,7 @@ cd bin
 
 [2] Mur-Artal R, Tardos J D. ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras[J]. arXiv preprint arXiv:1610.06475, 2016.
 
-[3]Redmon, Joseph, and A. Farhadi. "YOLOv3: An Incremental Improvement." (2018).
+[3] Redmon, Joseph, and A. Farhadi. "YOLOv3: An Incremental Improvement." (2018).
 
 ## License
 Our system is released under a [GPLv3 license](https://github.com/qixuxiang/orb-slam2_with_semantic_label/blob/master/License-gpl.txt).
