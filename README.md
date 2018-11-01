@@ -17,7 +17,8 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 ## 0. Related Publications
 
-**coming soon...**
+**[Deep Learning Based Semantic Labelling of 3D Point Cloud in Visual SLAM](https://www.researchgate.net/publication/328005677_Deep_Learning_Based_Semantic_Labelling_of_3D_Point_Cloud_in_Visual_SLAM)**
+
 
 ## 1. Prerequisites
 
@@ -34,7 +35,8 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/qixuxiang/YOLOv3_SpringEdition) for installation tutorial).
 
-
+Download yolov3.weights, yolov3.cfg and coco.names , put them in "bin" folder
+and make a dir named "img" in  "bin" folder, that is, execute command "mkdir img" in "bin" folder.
 
 ### 2.1 Build 
 
