@@ -29,25 +29,23 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
   * C++11(must)
   * GCC>=5.0
   * Cmake
-  * OpenCV2(must, not OpenCV3 or OpenCV4)
+  * OpenCV2(not OpenCV3/OpenCV4)
 
 
 ### 1.1 Installation
 
 Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/qixuxiang/YOLOv3_SpringEdition) for installation tutorial).
 
-Download yolov3.weights, yolov3.cfg and coco.names , put them in "bin" folder
-and make a dir named "img" in  "bin" folder, that is, execute command "mkdir img" in "bin" folder.
+Download `yolov3.weights`, `yolov3.cfg` and `coco.names` , put them in `bin` folder. Then, you must make a dir named `img` in  "bin" folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
 
-### 2.1 Build 
+### 1.2 Build 
 
 You should follow the instructions provided by ORB_SLAM2 build its dependencies, we do not list here.
 You also need to install NVIDIA and cuda to accelerate it.
 
 
-### 2.2 run 
-1. Download  yolov3.weights, yolov3.cfg and coco.names and put them to bin folder,they can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
-
+## 2. run 
+1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to data folder.
 3. Associate RGB images and depth images using the python script [associate.py](http://vision.in.tum.de/data/datasets/rgbd-dataset/tools). We already provide associations for some of the sequences in *Examples/RGB-D/associations/*. You can generate your own associations file executing:
 
@@ -79,7 +77,7 @@ If you want to use code for commercial purposes, please contact the authors.
 ## Other issue
 - After clone the code, the first thing you should do is to  compile `darknet` module at first, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so`, you can compile the whole project.
 - We do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
-- We do not test the code on OpenCV3.X, if you have installed OpenCV3.X or diffrent OpenCV version, please unistalled OpenCV3.X throughly.
+- The code does not works on OpenCV3.X, if you have installed OpenCV3.X or different OpenCV version, please uninstalled OpenCV3.X throughly.
 - Welcome to submit any issue if you have problems, and add your software and computer system information details, such as Ubuntu 16/14,OpenCV 2/3, CUDA 9.0, GCC5.4,etc..
 
 - We provide a [video](http://v.youku.com/v_show/id_XMzYyOTMyODM2OA==.html?spm=a2h3j.8428770.3416059.1) here.
