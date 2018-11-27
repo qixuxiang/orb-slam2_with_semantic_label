@@ -39,7 +39,7 @@ Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com
 Download `yolov3.weights`, `yolov3.cfg` and `coco.names` , put them in `bin` folder. Then, you must make a dir named `img` in  "bin" folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
 
 ### 2.3 Build 
-After clone the code, the first thing you should do is to  compile `darknet` module at first, which is in `Thirdparty/darknet` folder. After you have `libYOLOv3SE.so` file, you can compile the whole project.
+After clone the code, the first thing you should do is to  compile `darknet` module, which is in `Thirdparty/darknet` folder. After you have `libYOLOv3SE.so` file, you can compile the whole project.
 Then, you should follow the instructions provided by ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) build its dependencies, we do not list here.
 You also need to install NVIDIA and cuda to accelerate it.
 
