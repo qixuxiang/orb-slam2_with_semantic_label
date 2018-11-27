@@ -77,7 +77,7 @@ Our system is released under a [GPLv3 license](https://github.com/qixuxiang/orb-
 If you want to use code for commercial purposes, please contact the authors.
 
 ## Other issue
-- After clone the code, the first thing you should do is to  compille darknet at first, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so`, you can compile the whole project.
+- After clone the code, the first thing you should do is to  compile `darknet` module at first, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so`, you can compile the whole project.
 - We do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
 - We do not test the code on OpenCV3.X, if you have installed OpenCV3.X or diffrent OpenCV version, please unistalled OpenCV3.X throughly.
 - Welcome to submit any issue if you have problems, and add your software and computer system information details, such as Ubuntu 16/14,OpenCV 2/3, CUDA 9.0, GCC5.4,etc..
