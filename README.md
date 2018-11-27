@@ -7,7 +7,7 @@
 
 * Note: This repository is mainly built upon [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/pjreddie/darknet/). Many thanks for their great work.
 
-## introduction
+## 0.introduction
 
 **orb-slam2_with_semantic_label** is a  visual SLAM system based on  **[ORB_SLAM2[1-2]](https://github.com/raulmur/ORB_SLAM2)**.
 The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  robot applications. However, this method cannot provide semantic information in environmental mapping.In this work,we present a method to build a 3D dense semantic map,which utilize both 2D image labels from **[YOLOv3[3]](https://github.com/qixuxiang/YOLOv3_SpringEdition)** and 3D geometric information.
@@ -15,14 +15,14 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 
 
-## 0. Related Publications
+## 1. Related Publications
 
 **[Deep Learning Based Semantic Labelling of 3D Point Cloud in Visual SLAM](https://www.researchgate.net/publication/328005677_Deep_Learning_Based_Semantic_Labelling_of_3D_Point_Cloud_in_Visual_SLAM)**
 
 
-## 1. Prerequisites
+## 2. Prerequisites
 
-### 1.0 requirements
+### 2.1 requirements
   * Ubuntu 14.04/Ubuntu 16.04
   * ORB-SLAM2 
   * CUDA>=6.5
@@ -32,19 +32,19 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
   * OpenCV2(not OpenCV3/OpenCV4)
 
 
-### 1.1 Installation
+### 2.2 Installation
 
 Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/qixuxiang/YOLOv3_SpringEdition) for installation tutorial).
 
 Download `yolov3.weights`, `yolov3.cfg` and `coco.names` , put them in `bin` folder. Then, you must make a dir named `img` in  "bin" folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
 
-### 1.2 Build 
-
-You should follow the instructions provided by ORB_SLAM2 build its dependencies, we do not list here.
+### 2.3 Build 
+After clone the code, the first thing you should do is to  compile `darknet` module at first, which is in `Thirdparty/darknet` folder. After you have `libYOLOv3SE.so` file, you can compile the whole project.
+Then, you should follow the instructions provided by ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) build its dependencies, we do not list here.
 You also need to install NVIDIA and cuda to accelerate it.
 
 
-## 2. run 
+## 3. Run the code
 1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to data folder.
 3. Associate RGB images and depth images using the python script [associate.py](http://vision.in.tum.de/data/datasets/rgbd-dataset/tools). We already provide associations for some of the sequences in *Examples/RGB-D/associations/*. You can generate your own associations file executing:
@@ -75,9 +75,8 @@ Our system is released under a [GPLv3 license](https://github.com/qixuxiang/orb-
 If you want to use code for commercial purposes, please contact the authors.
 
 ## Other issue
-- After clone the code, the first thing you should do is to  compile `darknet` module at first, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so`, you can compile the whole project.
 - We do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
-- The code does not works on OpenCV3.X, if you have installed OpenCV3.X or different OpenCV version, please uninstalled OpenCV3.X throughly.
+- The code does not work on OpenCV3.X, if you have installed OpenCV3.X or different OpenCV version, please uninstalled OpenCV3.X throughly.
 - Welcome to submit any issue if you have problems, and add your software and computer system information details, such as Ubuntu 16/14,OpenCV 2/3, CUDA 9.0, GCC5.4,etc..
 
 - We provide a [video](http://v.youku.com/v_show/id_XMzYyOTMyODM2OA==.html?spm=a2h3j.8428770.3416059.1) here.
