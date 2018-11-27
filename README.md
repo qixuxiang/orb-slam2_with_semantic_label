@@ -24,11 +24,12 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 ### 1.0 requirements
   * Ubuntu 14.04/Ubuntu 16.04
-  * ORBSLAM2 
-  * CUDA >=6.5
+  * ORB-SLAM2 
+  * CUDA>=6.5
   * C++11(must)
-  * gcc5(must)
-  * cmake
+  * GCC5(must)
+  * Cmake
+  * OpenCV2(must, not OpenCV3 or OpenCV4)
 
 
 ### 1.1 Installation
@@ -76,6 +77,8 @@ Our system is released under a [GPLv3 license](https://github.com/qixuxiang/orb-
 If you want to use code for commercial purposes, please contact the authors.
 
 ## Other issue
-we do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
+- After clone the code, the first thing you should do is to  compille darknet at first, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so`, you can compile the total project.
+- We do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
+- We do not test the code on OpenCV3.X, if you have installed OpenCV3.X or diffrent OpenCV version, please unistalled OpenCV3.X throughly.
 
-We provide a [video](http://v.youku.com/v_show/id_XMzYyOTMyODM2OA==.html?spm=a2h3j.8428770.3416059.1) here.
+- We provide a [video](http://v.youku.com/v_show/id_XMzYyOTMyODM2OA==.html?spm=a2h3j.8428770.3416059.1) here.
