@@ -36,8 +36,6 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/qixuxiang/YOLOv3_SpringEdition) for installation tutorial).
 
-Download `yolov3.weights`, `yolov3.cfg` and `coco.names` , put them in `bin` folder. Then, you must make a dir named `img` in  "bin" folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
-
 ### 2.3 Build 
 After clone the code, the first thing you should do is to  compile `darknet` module, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so` file, you can compile the whole project.
 Then, you should follow the instructions provided by [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) build its dependencies, we do not list here. 
@@ -45,16 +43,16 @@ Also, you need to install NVIDIA and cuda to accelerate it.
 
 
 ## 3. Run the code
-1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).
-2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to data folder.
-3. Associate RGB images and depth images using the python script [associate.py](http://vision.in.tum.de/data/datasets/rgbd-dataset/tools). We already provide associations for some of the sequences in *Examples/RGB-D/associations/*. You can generate your own associations file executing:
+1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).Then, you should make a dir named `img` in  `bin` folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
+2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to `data` folder.
+3. Associate RGB images and depth images using the python script [associate.py](http://vision.in.tum.de/data/datasets/rgbd-dataset/tools). We already provide associations for some of the sequences in `Examples/RGB-D/associations/`. You can generate your own associations file executing:
 
   ```
   python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
   ```
 
 
-4. Execute the following c Change `TUMX.yaml` to TUM1.yaml,TUM2.yaml or TUM3.yaml for freiburg1, freiburg2 and freiburg3 sequences respectively. Change `PATH_TO_SEQUENCE_FOLDER`to the uncompressed sequence folder.My command is :
+4. Change `TUMX.yaml` to TUM1.yaml,TUM2.yaml or TUM3.yaml for freiburg1, freiburg2 and freiburg3 sequences respectively. Change `PATH_TO_SEQUENCE_FOLDER`to the uncompressed sequence folder.You can run the project by:
 
 ```
 cd bin
