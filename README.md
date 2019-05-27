@@ -62,7 +62,6 @@ sh build.sh
 ```
 cd bin
 ./rgbd_tum ../Vocabulary/ORBvoc.txt ../Examples/RGB-D/TUM2.yaml ../data/rgbd-data ../data/rgbd-data/associations.txt
-
 ```
 
 ![image](https://github.com/qixuxiang/orb-slam2_with_semantic_label/blob/master/png/result.png)
