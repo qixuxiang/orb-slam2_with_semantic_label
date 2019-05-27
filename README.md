@@ -38,9 +38,13 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 Refer to the corresponding original repositories ([ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) and [YOLO](https://github.com/qixuxiang/YOLOv3_SpringEdition) for installation tutorial).
 
 ### 2.3 Build 
-After clone the code, the first thing you should do is to  compile `darknet` module, which is in `Thirdparty/darknet` folder. When you have `libYOLOv3SE.so` file, you can compile the whole project.
-Then, you should follow the instructions provided by [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) build its dependencies, we do not list here. 
-Also, you need to install NVIDIA and cuda to accelerate it.
+
+```
+git clone https://github.com/qixuxiang/orb-slam2_with_semantic_label.git
+
+sh build.sh
+
+```
 
 
 ## 3. Run the code
