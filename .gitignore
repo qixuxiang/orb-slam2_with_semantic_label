@@ -46,4 +46,5 @@ _deps
 .vscode
 .idea
 .kdev4
+*.kdev4
 build/
