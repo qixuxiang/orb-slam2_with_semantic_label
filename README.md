@@ -25,12 +25,12 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 ### 2.1 requirements
   * Ubuntu 14.04/Ubuntu 16.04/Ubuntu 18.04
   * ORB-SLAM2 
-  * CUDA >= 6.5, may not work with CUDA10
+  * CUDA 8 or CUDA 9, may not work with CUDA 10
   * C++11(must)
   * GCC >= 5.0
   * cmake
-  * OpenCV2(not OpenCV3/OpenCV4)
-  * PCL >= 1.7, may not work with 1.9
+  * OpenCV2 or OpenCV3, may not work with OpenCV4
+  * PCL1.7 or PCL1.8, may not work with PCL1.9
 
 
 ### 2.2 Installation

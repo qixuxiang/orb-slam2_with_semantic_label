@@ -44,5 +44,6 @@ CTestTestfile.cmake
 _deps
 
 .vscode
-
+.idea
+.kdev4
 build/
