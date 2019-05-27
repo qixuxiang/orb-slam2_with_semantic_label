@@ -1,2 +1,0 @@
-/home/catkin_ws/src/orb_slam2/build/CMakeFiles/ORB_SLAM2.dir
-/home/catkin_ws/src/orb_slam2/build/CMakeFiles/rgbd_tum.dir

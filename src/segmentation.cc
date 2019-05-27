@@ -85,7 +85,7 @@ void Segmentation::doSegmentation(){
       double theta = std::atan(plane_par(1)/plane_par(0))*180/M_PI;
       double phi = std::acos(plane_par(2))*180/M_PI;
       double rho = plane_par(3);
-      if (isnan(theta) | isnan(phi) | isnan(rho)) continue;
+      if (std::isnan(theta) | std::isnan(phi) | std::isnan(rho)) continue;
       hough_par(0) = theta;
       hough_par(1) = phi;
       hough_par(2) = rho;
@@ -126,7 +126,7 @@ void Segmentation::doSegmentation(){
       double phi = std::acos(plane_par(2))*180/M_PI;
       double rho = plane_par(3);
 
-      if (isnan(theta) | isnan(phi) | isnan(rho)) continue;
+      if (std::isnan(theta) | std::isnan(phi) | std::isnan(rho)) continue;
 
       planes_coeffs.push_back(plane_par);
       hough_par(0) = theta;
