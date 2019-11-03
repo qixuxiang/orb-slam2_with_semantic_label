@@ -5,6 +5,7 @@ mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j2
+make -j2 # need repeat make and link
 
 cd ../../DBoW2
 
