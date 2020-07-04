@@ -1,3 +1,5 @@
+(Solved some "segmentFalut" based on the code of Xuxiang Qi,the writer)
+
 # There are so many large files in .git folder and I hate them, so I move the code to [https://github.com/qixuxiang/orb-slam2_with_semantic_labelling](https://github.com/qixuxiang/orb-slam2_with_semantic_labelling)
 
 # orb-slam2_with_semantic_label
@@ -24,13 +26,22 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
 ### 2.1 requirements
   * Ubuntu 14.04/Ubuntu 16.04/Ubuntu 18.04
+
   * ORB-SLAM2 
+
   * CUDA 8(must, CUDA9/10 will cause segmentation fault)
+
   * C++11(must)
+
   * GCC >= 5.0
+
   * cmake
+
   * OpenCV2 or OpenCV3, may not work with OpenCV4
+
   * PCL1.7 or PCL1.8, may not work with PCL1.9
+
+    **PS**:(Ubuntu18.04 CUDA10.1 opencv3.4 Eigen3.2.10 PCL1.8 has tested successfully)
 
 
 ### 2.2 Installation
