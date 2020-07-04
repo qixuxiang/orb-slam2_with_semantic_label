@@ -144,12 +144,13 @@ pcl::PointCloud< PointCloudMapping::PointT >::Ptr PointCloudMapping::generatePoi
 {
     PointCloud::Ptr tmp( new PointCloud() );
     // point cloud is null ptr
-    for ( int m=0; m<depth.rows; m+=3 )
+    for ( int m=0; m<depth.rows; m+=3)
     {
         for ( int n=0; n<depth.cols; n+=3 )
         {
             float d = depth.ptr<float>(m)[n];
             if (d < 0.01 || d>10)
+                //尝试加上距离滤波 d>5
                 continue;
             PointT p;
             p.z = d;
@@ -220,10 +221,43 @@ pcl::PointCloud< PointCloudMapping::PointT >::Ptr PointCloudMapping::generatePoi
 //
 // }
 
+// int PointCloudMapping::Init(string &weight_file, string  &config_file ){
+//     //YOLOv3 detector;
+// 	torch::DeviceType device_type;
 
+//     if (torch::cuda::is_available() ) {        
+//         device_type = torch::kCUDA;
+//     } else {
+//         device_type = torch::kCPU;
+//     }
+//     torch::Device device(device_type);
+
+//     // input image size for YOLO v3
+//     input_image_size = 416;
+
+//     Darknet net(config_file, &device);
+
+//     map<string, string> *info = net.get_net_info();
+
+//     info->operator[]("height") = std::to_string(input_image_size);
+
+//     std::cout << "loading weight ..." << endl;
+//     net.load_weights(weight_file);
+//     std::cout << "weight loaded ..." << endl;
+    
+//     net.to(device);
+
+//     torch::NoGradGuard no_grad;
+//     net.eval();
+
+//     std::cout << "start to inference ..." << endl;
+    
+//     return 0;
+// }
 
 void PointCloudMapping::viewer()
 {
+     
     std::vector<cv::Scalar> colors;
     string line, number;
     ifstream f("color.txt");
@@ -232,7 +266,36 @@ void PointCloudMapping::viewer()
         cout << "Cannot open file" << endl;
         exit(-1);
     }
+    torch::DeviceType device_type;
 
+    if (torch::cuda::is_available() ) {        
+        device_type = torch::kCUDA;
+    } else {
+        device_type = torch::kCPU;
+    }
+    torch::Device device(device_type);
+
+    // input image size for YOLO v3
+    input_image_size = 416;
+
+    //Darknet net("yolov3-tiny.cfg", &device);
+    Darknet net("yolov3.cfg", &device);
+
+    map<string, string> *info = net.get_net_info();
+
+    info->operator[]("height") = std::to_string(input_image_size);
+
+    std::cout << "loading weight ..." << endl;
+    //net.load_weights("yolov3-tiny.weights");
+    net.load_weights("yolov3.weights");
+    std::cout << "weight loaded ..." << endl;
+    
+    net.to(device);
+
+    torch::NoGradGuard no_grad;
+    net.eval();
+
+    std::cout << "start to inference ..." << endl;
 
 
     vector<int> v;
@@ -251,8 +314,11 @@ void PointCloudMapping::viewer()
 //        colors.push_back(cv::Scalar(rand() % 127 + 128, rand() % 127 + 128, rand() % 127 + 128));
 //    }
 
-    detector.Create("yolov3.weights", "yolov3.cfg", "coco.names");
-    sleep(3);
+    //std::cout<<"detector ready"<<std::endl;
+    //Init("./yolov3.weights", "./yolov3.cfg", "./coco.names");
+   // detector.Create("yolov3.weights", "yolov3.cfg", "coco.names");
+    //sleep(3);
+   // std::cout<<"detector created"<<std::endl;
     pcl::visualization::CloudViewer viewer("viewer");
 
     while(1)
@@ -278,35 +344,100 @@ void PointCloudMapping::viewer()
             N = keyframes.size();
         }
 
-
+        std::cout<<"key frames joined pointcloud start"<<std::endl;
         {
 
             for (size_t i=lastKeyframeSize; i<N ; i++) {
 
-                cv::Mat tmp_color = colorImgs[i];
-                char img[20];
-                sprintf(img, "%s%d%s", "img/image", i, ".png");
-                cv::imwrite(img,tmp_color);
-                //PointCloud::Ptr pre_p = generatePointCloud(keyframes[i], colorImgs[i], depthImgs[i]);
-                //PointCloud::Ptr p = regionGrowingSeg(pre_p);
-                //*globalMap += *pre_p;
-                //sleep(3);
-                cv::Mat img_tmp_color = cv::imread(img);
-                std::vector<BoxSE> boxes = detector.Detect(img_tmp_color, 0.5F);
-                //continue;
-                int n = boxes.size();
-                for (int i = 0; i < n; i++) {
-                    if(boxes[i].m_class_name == "person")
-                    {
-                        cv::rectangle(img_tmp_color, boxes[i].tl(), boxes[i].br(), colors[80], -1, 4);
-                    }
-                    //cv::putText(img, detector.Names(box.m_class), box.tl(), cv::FONT_HERSHEY_SIMPLEX, 1.0, colors[box.m_class], 2);
-                    //cv::rectangle(img, box, colors[box.m_class], 2);
-                    cv::rectangle(img_tmp_color, boxes[i].tl(), boxes[i].br(), colors[boxes[i].m_class], -1, 4);
-                }
-                PointCloud::Ptr surf_p = generatePointCloud(keyframes[i], img_tmp_color, depthImgs[i]);
-                //PointCloud::Ptr p = RegionGrowingSeg(surf_p);
+                // cv::Mat tmp_color = colorImgs[i];
+                // char img[20];
+                // sprintf(img, "%s%d%s", "img/image", i, ".png");  //sprintf将后面的字符串存储在img中
+                // cv::imwrite(img,tmp_color);
+                // //PointCloud::Ptr pre_p = generatePointCloud(keyframes[i], colorImgs[i], depthImgs[i]);
+                // //PointCloud::Ptr p = regionGrowingSeg(pre_p);
+                // //*globalMap += *pre_p;
+                // //sleep(3);
+                // cv::Mat img_tmp_color = cv::imread(img);
+                // std::vector<BoxSE> boxes = detector.Detect(img_tmp_color, 0.5F);
+                // //continue;
+                // int n = boxes.size();
+                // for (int i = 0; i < n; i++) {
+                //     if(boxes[i].m_class_name == "person")
+                //     {
+                //         cv::rectangle(img_tmp_color, boxes[i].tl(), boxes[i].br(), colors[80], -1, 4);
+                //     }
+                //     //cv::putText(img, detector.Names(box.m_class), box.tl(), cv::FONT_HERSHEY_SIMPLEX, 1.0, colors[box.m_class], 2);
+                //     //cv::rectangle(img, box, colors[box.m_class], 2);
+                //     cv::rectangle(img_tmp_color, boxes[i].tl(), boxes[i].br(), colors[boxes[i].m_class], -1, 4);
+                // }
+                cv::Mat origin_image, resized_image;
 
+                origin_image = colorImgs[i];
+                
+                //cv::cvtColor(origin_image, resized_image,  cv::COLOR_BGR2RGB);
+                cv::resize(origin_image, resized_image, cv::Size(input_image_size, input_image_size));
+
+                cv::Mat img_float;
+                resized_image.convertTo(img_float, CV_32F, 1.0/255);
+
+                auto img_tensor = torch::from_blob(img_float.data, {1, input_image_size, input_image_size, 3}).to(device);
+                img_tensor = img_tensor.permute({0,3,1,2});
+
+                auto start = std::chrono::high_resolution_clock::now();
+                
+                auto output = net.forward(img_tensor);
+                
+                // filter result by NMS 
+                // class_num = 80
+                // confidence = 0.6
+                auto result = net.write_results(output, 80, 0.6, 0.4);
+
+                auto end = std::chrono::high_resolution_clock::now();
+
+                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start); 
+
+                // It should be known that it takes longer time at first time
+                std::cout << "inference taken : " << duration.count() << " ms" << endl; 
+
+                if (result.dim() == 1)
+                {
+                    std::cout << "no object found" << endl;
+                }
+                else
+                {
+                    int obj_num = result.size(0);
+
+                    std::cout << obj_num << " objects found" << endl;
+
+                    float w_scale = float(origin_image.cols) / input_image_size;
+                    float h_scale = float(origin_image.rows) / input_image_size;
+
+                    result.select(1,1).mul_(w_scale);
+                    result.select(1,2).mul_(h_scale);
+                    result.select(1,3).mul_(w_scale);
+                    result.select(1,4).mul_(h_scale);
+
+                    auto result_data = result.accessor<float, 2>();
+            /*	for(int i=0;i<result.size(0);i++){
+                    for(int j=0;j<result.size(1);j++){
+                    std::cout<<"data_"<<i<<":"<<result_data[i][j]<<" ";
+            }
+                    std::cout<<std::endl;
+            }*/
+
+                    for (int i = 0; i < result.size(0) ; i++)
+                    {
+                //std::string str=std::to_string(result_data[i][5]);
+                //cv::putText(origin_image, str, cv::Point(result_data[i][1], result_data[i][2])-cv::Point(0,5), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0,255,0), 2);            
+                //cv::rectangle(origin_image, cv::Point(result_data[i][1], result_data[i][2]), cv::Point(result_data[i][3], result_data[i][4]), cv::Scalar(0, 0, 255), -1, 1, 0);
+                cv::rectangle(origin_image, cv::Point(result_data[i][1], result_data[i][2]), cv::Point(result_data[i][3], result_data[i][4]), colors[result_data[i][7]], -1, 1, 0);
+                    }
+
+                }
+
+                PointCloud::Ptr surf_p = generatePointCloud(keyframes[i], origin_image, depthImgs[i]);
+                //PointCloud::Ptr p = RegionGrowingSeg(surf_p);
+                //PointCloud::Ptr surf_p = generatePointCloud(keyframes[i],colorImgs[i], depthImgs[i]);
                 *globalMap += *surf_p;
 
             }
@@ -314,7 +445,7 @@ void PointCloudMapping::viewer()
 
         }
 
-        voxel.setInputCloud( globalMap );
+        //voxel.setInputCloud( globalMap );
 
         viewer.showCloud( globalMap );
 //      pcl::PointCloud<pcl::PointXYZ> ply_file;
@@ -328,7 +459,7 @@ void PointCloudMapping::viewer()
     pcl::PCDWriter pcdwriter;
     pcdwriter.write<pcl::PointXYZRGBA>("global_color.pcd", *globalMap);//write global point cloud map and save to a pcd file
     cpf_seg(globalMap);
-    detector.Release();
+    //detector.Release();
     /*
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
     pcl::PCDWriter pcdwriter;
@@ -344,7 +475,7 @@ void PointCloudMapping::viewer()
      */
 
     //poisson_reconstruction(globalMap);
-    //final_process();
+    final_process();
     //exit(0);
 
 
@@ -353,11 +484,13 @@ void PointCloudMapping::viewer()
 
 void PointCloudMapping::final_process()
 {
-    vector<int> vcup;
+    vector<int> vbottle;
     vector<int> vteddy;
     vector<int> vkeyboard;
     vector<int> vmouse;
     vector<int> vmonitor;
+    vector<int> vchair;
+    vector<int> vstr;
 
 
     PointCloudT::Ptr tgt (new PointCloudT);
@@ -370,7 +503,8 @@ void PointCloudMapping::final_process()
     pcl::PointCloud<pcl::PointXYZL> lcloud = *ll;
     //cout <<lcloud.size()<<endl;
     //cout<<"1:"<<Final2.points.size()<<"/n"<<"2:"<<Final2.points.size();
-    for(int i=0;i< Final1.points.size();i++)
+    static int sum=0;
+    for(int i=0;i< Final1.points.size()-20;i++)
 
     {
 
@@ -382,46 +516,67 @@ void PointCloudMapping::final_process()
         basic_pointl.x = lcloud.points[i].x;
         basic_pointl.y = lcloud.points[i].y;
         basic_pointl.z = lcloud.points[i].z;
+        basic_pointl.label=lcloud.points[i].label;
         basic_point.rgba = Final1.points[i].rgba;
         uint32_t rgba = Final1.points[i].rgba;
         int r =rgba >> 16 & 0x0000ff;
         int g = rgba >> 8 & 0x0000ff;
         int b = rgba & 0x0000ff;
         //cout <<basic_point.rgba<<endl;
+        // for(int j=0;j<200;j++){
+        //     if(lcloud.points[i+j].label==lcloud.points[i].label){
+        //         sum++;
+        //     }
+        // }
 
 
-
-        if(b==0&&g==254&&r==124){//0,252,124
+        //if(b==0&&g==254&&r==124&&sum>15){//0,252,124
+        //if(b==0&&g==0&&r==255&&sum>150){//0,252,124
+        if(b==0&&g==0&&r==255){//0,252,124
             //cout <<r<<endl;//monitor
             vmonitor.push_back(i);
             lcloud[i].label = 300;
 
         }
-        if(b==203&&g==192&&r==255){//203,192,255
+        //if(b==240&&g==176&&r==0&&sum>150){//203,192,255
+        if(b==240&&g==176&&r==0){//203,192,255
             //cout <<r<<endl;//mouse
             vmouse.push_back(i);
             lcloud[i].label = 400;
 
         }
-        if(b==128&&g==249&&r==237){//128,249,237
+        //if(b==80&&g==208&&r==146&&sum>150){//128,249,237
+         if(b==80&&g==208&&r==146){//128,249,237
             //cout <<r<<endl;//keyboard
             vkeyboard.push_back(i);
             lcloud[i].label = 500;
 
         }
-        if(b==50&&g==205&&r==50){//50,205,50
+        //if(b==160&&g==48&&r==112&&sum>150){//50,205,50
+        if(b==160&&g==48&&r==112){//50,205,50
             //cout <<r<<endl;//teddy bear
             vteddy.push_back(i);
             lcloud[i].label = 600;
 
 
         }
-        if(b==240&&g==160&&r==120){//240,160,120
+        //if(b==83&&g==103&&r==191&&sum>150){//240,160,120
+        if(b==83&&g==103&&r==191){//240,160,120
             //cout <<r<<endl;//cup
-            vcup.push_back(i);
+            vchair.push_back(i);
             lcloud[i].label = 700;
 
         }
+        //if(b==0&&g==255&&r==255&&sum>150){
+        if(b==0&&g==255&&r==255){
+            vbottle.push_back(i);
+            lcloud[i].label = 800;
+
+        }
+        // else{
+        //     vstr.push_back(i);
+        //     lcloud[i].label = 900;
+        // }
 
     }
 

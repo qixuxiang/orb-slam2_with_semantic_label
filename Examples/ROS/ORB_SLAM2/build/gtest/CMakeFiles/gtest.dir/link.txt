@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -O2 -g -DNDEBUG  -shared -Wl,-soname,libgtest.so -o /home/catkin_ws/src/orb_slam2_astra/Examples/ROS/ORB_SLAM2/lib/libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/catkin_ws/src/orb_slam2_astra/Examples/ROS/ORB_SLAM2/build/gtest/src -lpthread -Wl,-rpath,/home/catkin_ws/src/orb_slam2_astra/Examples/ROS/ORB_SLAM2/build/gtest/src 

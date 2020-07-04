@@ -1,5 +1,0 @@
-classes=20
-train=train.txt
-valid=valid.txt
-names=voc2007.names
-backup=backup/

@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/catkin_ws/src/orb_slam2_astra/Examples/ROS/ORB_SLAM2/build/devel/setup.sh
