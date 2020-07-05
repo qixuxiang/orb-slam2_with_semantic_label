@@ -25,7 +25,7 @@ public:
         noise_threshold(0.02f),
         smooth_cost (0.001),
         min_inliers_per_plane (100),
-	min_plane_area(0.025),
+	    min_plane_area(0.025),
         max_num_iterations (25),
         max_curvature (0.01f),
         gc_scale (1e3){}

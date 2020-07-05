@@ -58,6 +58,7 @@ void Segmentation::doSegmentation(){
   std::multimap<uint32_t, uint32_t> supervoxel_adjacency;
   super.getSupervoxelAdjacency (supervoxel_adjacency);
   pcl::PointCloud<pcl::PointNormal>::Ptr sv_centroid_normal_cloud = pcl::SupervoxelClustering<PointT>::makeSupervoxelNormalCloud (supervoxel_clusters);
+  //重心法向量点云
   clock_t sv_end = clock();
   printf("Super-voxel segmentation takes: %.2fms\n", (double)(sv_end - sv_start)/(CLOCKS_PER_SEC/1000));
 
@@ -65,23 +66,24 @@ void Segmentation::doSegmentation(){
   // Constrained plane extraction
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  /* Generate plane hypotheses using super-voxels */
-  std::vector<Eigen::Vector4f> planes_coeffs;
+  /* Generate plane hypotheses using super-voxels 用超体素生成平面假设*/
+  std::vector<Eigen::Vector4f> planes_coeffs;      //平面系数，霍夫，利用霍夫变换从点云数据中提取空间平面
   std::vector<Eigen::Vector3f> planes_hough;
   double min_theta = 360; double max_theta = -360;
   double min_phi = 360; double max_phi = -360;
-  double min_rho = 100; double max_rho = -100;
+  double min_rho = 100; double max_rho = -100;     //这样写跟一般的写法比较结果一模一样，只要逻辑相同，初始值的设置对最大最小的比较结果没有影响
 
   std::map<uint32_t, pcl::Supervoxel<PointT>::Ptr>::iterator cluster_itr_c = supervoxel_clusters.begin();
   for (; cluster_itr_c != supervoxel_clusters.end(); cluster_itr_c++){
     pcl::Supervoxel<PointT>::Ptr sv = cluster_itr_c->second;
     pcl::PointCloud<PointT>::Ptr cloud = sv->voxels_;
-    float curvature;
+    float curvature;   //曲率
     Eigen::Vector4f plane_par;
     Eigen::Vector3f hough_par;
-    pcl::computePointNormal(*cloud, plane_par, curvature);
+    pcl::computePointNormal(*cloud, plane_par, curvature);    //计算点云法向量，生成Vector4f形式的plane_par，
+                                                              //前三项为法线的(nx,ny,nz)坐标加上nc：重心和P之间的距离
     if (curvature < config_.max_curvature){
-      // Convert to Hough transform
+      // Convert to Hough transform  执行霍夫变换
       double theta = std::atan(plane_par(1)/plane_par(0))*180/M_PI;
       double phi = std::acos(plane_par(2))*180/M_PI;
       double rho = plane_par(3);
@@ -100,12 +102,12 @@ void Segmentation::doSegmentation(){
     }
   }
 
-  // Plane hypothesis generation using random sampling
+  // Plane hypothesis generation using random sampling生成平面假设，进一步丰富平面候选集
   if (config_.use_random_sampling){
     std::cout << "Randomly sampling plane hypotheses...\n";
     int max_random_hyps = 1000;
     int count = 0;
-    int num_supervoxels = supervoxel_clusters.size ();
+    int num_supervoxels = supervoxel_clusters.size ();       //PointNormal除了xyz数据之外，还包含该点的法线向量和曲率
     srand(time(NULL));
     pcl::SampleConsensusModelPlane<pcl::PointNormal>::Ptr model_p (new pcl::SampleConsensusModelPlane<pcl::PointNormal> (sv_centroid_normal_cloud));
     while (count < max_random_hyps){
@@ -114,7 +116,7 @@ void Segmentation::doSegmentation(){
       int iters;
       model_p->getSamples(iters, samples);
       Eigen::VectorXf plane_par;
-      model_p->computeModelCoefficients(samples, plane_par);
+      model_p->computeModelCoefficients(samples, plane_par);    //计算模型系数
 
       std::set<int> test_points;
       test_points.insert((int)(rand()%num_supervoxels+1));
@@ -144,7 +146,7 @@ void Segmentation::doSegmentation(){
     }
   }
 
-  // Assign points to planes.
+  // Assign points to planes.将点对应到生成的平面中，用法向量来特征表示平面
   uint32_t node_ID = 0;
   std::map<uint32_t, uint32_t> label2index;
   std::map<uint32_t, pcl::Supervoxel<PointT>::Ptr>::iterator cluster_itr = supervoxel_clusters.begin();
@@ -156,13 +158,13 @@ void Segmentation::doSegmentation(){
   std::vector<int> sv_labels(num_super_voxels,0);
   int good_planes_count = 0;
   uint32_t outlier_label = 0;
-  // Remove duplicated planes
+  // Remove duplicated planes移除重复的平面
   if (planes_coeffs.size() > 0){
     std::vector<Eigen::Vector4f> plane_candidates;
     double step_theta = 1;
     double step_phi = 1;
     double step_rho = 0.025;
-    int theta_bins = round((max_theta - min_theta)/step_theta) + 1;
+    int theta_bins = round((max_theta - min_theta)/step_theta) + 1;        //四舍五入
     int phi_bins = round((max_phi - min_phi)/step_phi) + 1;
     int rho_bins = round((max_rho - min_rho)/step_rho) + 1;
 
@@ -209,12 +211,13 @@ void Segmentation::doSegmentation(){
     int count_idx = 0;
     for (int j = 0; j<num_planes; ++j){
       Eigen::Vector4f p_coeffs = plane_candidates.at(j);
-
+      //这里是平面的法向量
       Eigen::Vector3f p_normal;
       p_normal[0] = p_coeffs[0];
       p_normal[1] = p_coeffs[1];
       p_normal[2] = p_coeffs[2];
       Eigen::VectorXi inliers_idx(num_super_voxels);
+      //Eigen::VectorXf normal_idx(num_super_voxels);
       Eigen::VectorXf point2plane(num_super_voxels);
       inliers_idx = Eigen::VectorXi::Zero(num_super_voxels);
       int inliers_count = 0;
@@ -222,6 +225,7 @@ void Segmentation::doSegmentation(){
       for (size_t i = 0; i < num_super_voxels; ++i){
         pcl::PointXYZ p;
         Eigen::Vector3f n;
+        //获取曲面片的质心和法向量
         p.x = sv_centroid_normal_cloud->at(i).x;
         p.y = sv_centroid_normal_cloud->at(i).y;
         p.z = sv_centroid_normal_cloud->at(i).z;
@@ -232,7 +236,7 @@ void Segmentation::doSegmentation(){
         // Distance from a point to a plane is scaled with a weight measuring the difference between point and plane normals.
         float p2p_dis = pcl::pointToPlaneDistance(p,p_coeffs);
         if (std::isnan(p2p_dis)) p2p_dis = config_.noise_threshold;
-        float dotprod = std::fabs(n.dot(p_normal));
+        float dotprod = std::fabs(n.dot(p_normal));      //dot表示向量点乘
         if (std::isnan(dotprod)) dotprod = 0;
         float normal_dis = dotprod < 0.8 ? 100 : 1;
         float data_cost = p2p_dis*normal_dis;
@@ -248,6 +252,7 @@ void Segmentation::doSegmentation(){
       if (plane_score <= confidence_threshold){
         inliers_mat.row(count_idx) = inliers_idx;
         normals_mat.row(count_idx) << p_coeffs(0), p_coeffs(1), p_coeffs(2);
+        //normals_mat.row(count_idx) =normal_idx;
         point2plane_mat.row(count_idx) = point2plane;
         good_planes.push_back(p_coeffs);
         planes_inliers_idx.push_back(inliers_idx);
@@ -262,7 +267,7 @@ void Segmentation::doSegmentation(){
     std::cout << "Number of plane candidates = " << num_planes << "\n";
     if (num_planes > 1){
 
-      inliers_mat.conservativeResize(num_planes, num_super_voxels);
+      inliers_mat.conservativeResize(num_planes, num_super_voxels);   //conservativeResize()不改变原来的数据
       normals_mat.conservativeResize(num_planes, num_super_voxels);
       point2plane_mat.conservativeResize(num_planes, num_super_voxels);
 
@@ -299,12 +304,14 @@ void Segmentation::doSegmentation(){
       initLabeling = Eigen::VectorXi::Ones(num_planes);
       Eigen::VectorXi finalLabeling(num_planes);
       double finalEnergy = 0;
+      //中间确定的候选平面，1代表被选择，0代表不被选择
       LSA_TR(&finalEnergy, &finalLabeling, num_planes, plane_unaries, plane_pairwises, initLabeling);
       if (finalEnergy == 0){
         PCL_WARN("Optimization got stuck \n");
         finalLabeling = Eigen::VectorXi::Ones(num_planes);
       }
       int num_selected_planes = finalLabeling.sum();
+      //最后从所有平面候选集中选择出来符合几何规则，比较好的平面
       std::cout << "Number of supporting planes detected = " << num_selected_planes << "\t";
       std::cout << "(Note: This is not the true number of planes in the scene.)\n";
       std::vector<Eigen::Vector4f> selected_planes;
@@ -318,16 +325,18 @@ void Segmentation::doSegmentation(){
         }
       }
 
-      // Outlier data cost
+      // Outlier data cost，加上没被选中的平面标签0
       int num_labels = num_selected_planes + 1;
       outlier_label = 0;
       unary_matrix.row(outlier_label) = Eigen::VectorXf::Ones(num_super_voxels)*((config_.noise_threshold*config_.gc_scale));
       Eigen::MatrixXi unary_matrix_int = unary_matrix.cast<int>();
       int *data_cost = new int[num_super_voxels*num_labels];
       Eigen::Map<Eigen::MatrixXi>(data_cost, unary_matrix_int.rows(), unary_matrix_int.cols() ) = unary_matrix_int;
+      //为了给所有的曲面片分配不同的选中的平面标签，构建图优化问题
       GCoptimizationGeneralGraph *gc = new GCoptimizationGeneralGraph(num_super_voxels, num_labels);
       gc->setDataCost(data_cost);
 
+      //若两块曲面片标签相同，即属于同一个平面则连接两块曲面片的边权重为0,若标签值不同则边的权重为1；
       for ( int l1 = 0; l1 < num_labels; l1++){
         for (int l2 = 0; l2 < num_labels; l2++){
           if (l1==0) gc->setSmoothCost(l1,l2,0);
@@ -338,6 +347,7 @@ void Segmentation::doSegmentation(){
         }
       }
 
+      //应该是代表连接的两块曲面片的边的起点和终点
       std::multimap<uint32_t,uint32_t>::iterator adjacency_itr = supervoxel_adjacency.begin();
       float smooth_cost = config_.noise_threshold/2;
       for ( ; adjacency_itr != supervoxel_adjacency.end(); ++adjacency_itr)
@@ -355,16 +365,16 @@ void Segmentation::doSegmentation(){
         float w = std::fabs(n1.dot(n2));
         if (w < 0.5) w = 0.0f;
         int edge_weight = (int)(w * config_.gc_scale * smooth_cost); // This works better than Potts smoothness model
-        gc->setNeighbors(node1,node2,edge_weight);
+        gc->setNeighbors(node1,node2,edge_weight);     //建立连接边关系
       }
       try{
-        gc->expansion(config_.max_num_iterations);
+        gc->expansion(config_.max_num_iterations);     //迭代次数
       }catch(GCException e){
         e.Report();
       }
 
       for (int i=0; i<num_super_voxels;i++){
-        sv_labels.at(i) = gc->whatLabel(i);
+        sv_labels.at(i) = gc->whatLabel(i);     //num_labels中的一种
       }
       // Free some memory
       delete gc;
@@ -438,6 +448,7 @@ void Segmentation::doSegmentation(){
     int outlier_label = 0;
     std::map<uint32_t,uint32_t> label_list_map;
     int new_label = 1;
+    //将component一个个赋予label标签
     for (uint32_t i = 0; i != component.size(); ++i){
       int count = std::count(component.begin(), component.end(), component[i]);
       int label = component[i];
@@ -481,6 +492,7 @@ void Segmentation::doSegmentation(){
     }
 
   }
+  if(count%50==0) std::cout<<"point_itr->label:"<<point_itr->label<<std::endl;
   cout <<count<<endl;
 
 

@@ -102,6 +102,7 @@ public:
 
     // Current Frame
     Frame mCurrentFrame;
+    cv::Mat mImRGB;
     cv::Mat mImGray;
     cv::Mat mImDepth; // adding mImDepth member to realize pointcloud view
 
@@ -223,6 +224,9 @@ protected:
     bool mbRGB;
 
     list<MapPoint*> mlpTemporalPoints;
+    std::string  weight_file="./yolov3.weights";
+    std::string  config_file="./yolov3.cfg";
+    std::string  data_name="./coco.names";
 
     // for point cloud viewing
     shared_ptr<PointCloudMapping> mpPointCloudMapping;

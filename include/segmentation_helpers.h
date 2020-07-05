@@ -25,6 +25,7 @@ bool isConvex(Eigen::Vector3f p1, Eigen::Vector3f n1, Eigen::Vector3f p2, Eigen:
     bool is_smooth = true;
 
     float normal_angle = pcl::getAngle3D(source_normal, target_normal, true);
+    //float normal_angle = pcl::getAngle3D(source_normal, target_normal);
     //  Geometric comparisons
     Eigen::Vector3f vec_t_to_s, vec_s_to_t;
 
@@ -54,6 +55,7 @@ bool isConvex(Eigen::Vector3f p1, Eigen::Vector3f n1, Eigen::Vector3f p2, Eigen:
 // Sanity Criterion: Check if definition convexity/concavity makes sense for connection of given patches
     bool use_sanity_check = true;
     float intersection_angle =  pcl::getAngle3D (ncross, vec_t_to_s, true);
+    //float intersection_angle =  pcl::getAngle3D (ncross, vec_t_to_s);
     float min_intersect_angle = (intersection_angle < 90.) ? intersection_angle : 180. - intersection_angle;
 
     float intersect_thresh = 57. * 1. / (1. + exp (-0.3 * (normal_angle - 33.)));

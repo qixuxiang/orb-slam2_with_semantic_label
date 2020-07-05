@@ -21,12 +21,13 @@
 #define POINTCLOUDMAPPING_H
 
 #include "System.h"
-#include "YOLOv3SE.h"
+#include "Darknet.h"
 #include <pcl/common/transforms.h>
 #include <pcl/point_types.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <condition_variable>
+#include <pcl/search/impl/search.hpp>
 
 // for clustering
 #include <pcl/filters/extract_indices.h>
@@ -72,14 +73,19 @@ public:
     std::vector<cv::Scalar> colors;
     // 插入一个keyframe，会更新一次地图
     void insertKeyFrame( KeyFrame* kf, cv::Mat& color, cv::Mat& depth );
+    //void insertKeyFrame(KeyFrame *kf);
     void shutdown();
     void viewer();
     void final_process();
+    //int Init(string  &weight_file, string &config_file);
 //    void filtCloud(float leaveSize = 0.014f);
 //    void removePlane();
 //    void cluster();
 
-    YOLOv3 detector;
+    int input_image_size;
+    // std::string  weight_file;
+    // std::string  config_file;
+    // std::string  data_name;
     cv::Mat dye_gray(cv::Mat &gray);
     PointCloud::Ptr ECE(PointCloud::Ptr cloud);
     PointCloud::Ptr cylinderSeg(PointCloud::Ptr cloud);
@@ -139,6 +145,7 @@ protected:
     //add by me end
     double resolution = 0.01;
     pcl::VoxelGrid<PointT>  voxel;
+    pcl::PassThrough<PointT> pass;
     pcl::StatisticalOutlierRemoval<PointT> sor;// 创建滤波器对象
 
 };
