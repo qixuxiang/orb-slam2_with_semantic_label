@@ -58,9 +58,7 @@ sh build.sh
 
 
 ## 3. Run the code
-1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).Then, you should make a dir named `img` in  `bin` folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
-
-*you can use YOLOv3 replace libYOLOv3SE, see details https://blog.csdn.net/TM431700/article/details/105889614)*.
+1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).Then, you should make a dir named `img` in  `bin` folder, that is, you should execute command `sudo mkdir img` in `bin` folder. you can use (libtorch-yolov3)(https://github.com/walktree/libtorch-yolov3) replace libYOLOv3SE, see details https://blog.csdn.net/TM431700/article/details/105889614).
 
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to `data` folder.
 
@@ -79,7 +77,8 @@ cd bin
 ```
 
 ![image](https://github.com/qixuxiang/orb-slam2_with_semantic_label/blob/master/png/result.png)
-
+## update
+1. update 20200705: fix segment fault, make system run faster and use libtorch, thanks for [vayneli](https://github.com/vayneli)!
 
 ## Reference
 [1] Mur-Artal R, Montiel J M M, Tardos J D. ORB-SLAM: a versatile and accurate monocular SLAM system[J]. IEEE Transactions on Robotics, 2015, 31(5): 1147-1163.
