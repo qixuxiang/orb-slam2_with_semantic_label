@@ -60,7 +60,7 @@ sh build.sh
 ## 3. Run the code
 1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).Then, you should make a dir named `img` in  `bin` folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
 
-*you can use YOLOv3 replace libYOLOv3SE, see details [here]https://blog.csdn.net/TM431700/article/details/105889614)*.
+*you can use YOLOv3 replace libYOLOv3SE, see details https://blog.csdn.net/TM431700/article/details/105889614)*.
 
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to `data` folder.
 
