@@ -1,4 +1,4 @@
-(Solved some "segmentFalut" based on the code of Xuxiang Qi,the writer)
+
 
 # There are so many large files in .git folder and I hate them, so I move the code to [https://github.com/qixuxiang/orb-slam2_with_semantic_labelling](https://github.com/qixuxiang/orb-slam2_with_semantic_labelling)
 
@@ -29,17 +29,17 @@ The ORB-SLAM2 is a great visual SLAM method that has been popularly applied in  
 
   * ORB-SLAM2 
 
-  * CUDA 8(must, CUDA9/10 will cause segmentation fault)
-
-  * C++11(must)
+  * CUDA
 
   * GCC >= 5.0
 
   * cmake
 
-  * OpenCV2 or OpenCV3, may not work with OpenCV4
+  * OpenCV
 
   * PCL1.7 or PCL1.8, may not work with PCL1.9
+  
+  * libTorch 1.4
 
     **PS**:(Ubuntu18.04 CUDA10.1 opencv3.4 Eigen3.2.10 PCL1.8 has tested successfully)
 
@@ -59,6 +59,8 @@ sh build.sh
 
 ## 3. Run the code
 1. Download  `yolov3.weights`, `yolov3.cfg` and `coco.names` from [darknet](https://pjreddie.com/darknet/yolo/) and put them in `bin` folder. Also, these files can be found in [YOLO V3](https://github.com/qixuxiang/YOLOv3_SpringEdition).Then, you should make a dir named `img` in  `bin` folder, that is, you should execute command `sudo mkdir img` in `bin` folder.
+
+*you can use YOLOv3 replace libYOLOv3SE, see details [here]https://blog.csdn.net/TM431700/article/details/105889614)*.
 
 2. Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download and uncompress it to `data` folder.
 
