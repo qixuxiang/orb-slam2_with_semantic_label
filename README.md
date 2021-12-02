@@ -94,7 +94,6 @@ If you want to use code for commercial purposes, please contact the authors.
 
 ## Other issue
 - We do not test the code there on ROS bridge/node.The system relies on an extremely fast and tight coupling between the mapping and tracking on the GPU, which I don't believe ROS supports natively in terms of message passing.
-- I only test the code on OpenCV2 + CDUA8 + CUDNN7 + PCL1.8, and CUDA9/10  will cause segmentation fault.
 - Welcome to submit any issue if you have problems, and add your software and computer system information details, such as Ubuntu 16/14,OpenCV 2/3, CUDA 9.0, GCC5.4,etc..
 
 - We provide a [video](http://v.youku.com/v_show/id_XMzYyOTMyODM2OA==.html?spm=a2h3j.8428770.3416059.1) here.
